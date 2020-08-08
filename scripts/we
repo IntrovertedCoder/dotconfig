@@ -1,0 +1,83 @@
+#!/bin/python3.8
+import requests
+api = '05e8cb42251e69aa83d7e2e67f38ae55'
+r = requests.get('https://api.darksky.net/forecast/' +
+                 api + '/replace with gps cords').json()
+
+
+def degToCompass(num):
+    val = int((num/22.5)+.5)
+    arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
+           "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+    return(arr[(val % 16)])
+
+
+try:
+    currently = r['currently']
+except KeyError:
+    print('Error please try again')
+    exit()
+
+try:
+    summary = r['minutely']['summary']
+except KeyError:
+    summary = 'Err'
+
+try:
+    temperature = str(currently['temperature'])
+except KeyError:
+    temperature = 'Err'
+try:
+    aTemperature = str(currently['apparentTemperature'])
+except KeyError:
+    aTemperature = 'Err'
+
+try:
+    nSD = str(currently['nearestStormDistance'])
+except KeyError:
+    nSD = 'Err'
+try:
+    nSB = degToCompass(currently['nearestStormBearing'])
+except KeyError:
+    nSB = 'Err'
+
+try:
+    precip = str(int(r['hourly']['data'][0]['precipProbability'] * 100)) + '%'
+except KeyError:
+    precip = 'Err'
+try:
+    intensity = str(r['hourly']['data'][0]['precipIntensity'])
+except KeyError:
+    intensity = 'Err'
+
+try:
+    cloudy = str(int(currently['cloudCover'] * 100)) + '%'
+except KeyError:
+    cloudy = 'Err'
+try:
+    visibility = str(currently['visibility'])
+except KeyError:
+    visibility = 'Err'
+
+try:
+    wSpeed = str(currently['windSpeed'])
+except KeyError:
+    wSpeed = 'Err'
+try:
+    wBearing = degToCompass(currently['windBearing'])
+except KeyError:
+    wBearing = 'Err'
+
+print(summary + '''
+Temp: ''' + temperature + '     Feels Like: ' + aTemperature + '''
+Storm Distance: ''' + nSD + '   Storm Direction: ' + nSB + '''
+Precip: ''' + precip + '        Ammount: ' + intensity + '''
+Cloudy: ''' + cloudy + '        Visibility: ' + visibility + '''
+Wind Speed: ''' + wSpeed + '    Wind Bearing: ' + wBearing)
+
+try:
+    print('\nAlerts:')
+    for i in r['alerts']:
+        print(i['title'] + '        ' + ', '.join(i['regions']))
+except KeyError:
+    test = 1
