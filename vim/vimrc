@@ -119,6 +119,7 @@ map <leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
 set visualbell
 set title
 
-" Open link to file in vertical and horizontal split
+"Open files/create files
 nnoremap <F11> :vertical wincmd f<CR>
 nnoremap <F12> :wincmd f<CR>
+nnoremap <leader>gf :e <cfile><CR>
