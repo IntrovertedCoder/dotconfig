@@ -9,6 +9,7 @@ alias 3.6='cd /mnt/a/Coding/Python/3.6'
 alias 3.5='cd /mnt/a/Coding/Python/3.5'
 alias research='cd /mnt/a/Research\ Lab'
 alias projects='vim /mnt/a/projects/projects'
+alias %appdata%='cd /mnt/c/users/natro/AppData/Roaming'
 
 # Microsoft Office suite
 alias pptx='/mnt/c/Program\ Files\ \(x86\)/Microsoft\ Office/root/Office16/POWERPNT.EXE &'
