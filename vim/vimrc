@@ -27,6 +27,7 @@ map <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(systemlist("cd " .
 " Tab management
 set softtabstop=4 shiftwidth=4
 set expandtab
+set autoindent
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 retab
 
