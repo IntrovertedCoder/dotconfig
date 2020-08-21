@@ -8,3 +8,5 @@ ln -s ~/.config/dots/vim/vim ~/.vim
 ln -s ~/.config/dots/bash/bashrc ~/.bashrc
 ln -s ~/.config/dots/bash/bash_aliases ~/.bash_aliases
 sudo ln -s ~/.config/dots/bin/googler /bin/googler
+
+sudo apt-get install tree
