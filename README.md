@@ -1,2 +1,2 @@
 # dotconfig
-.config files for WSL
+.config files for Raspberry pi lights
