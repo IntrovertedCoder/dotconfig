@@ -1,21 +1,3 @@
-# Alias for wsl
-alias A:='cd /mnt/a'
-alias C:='cd /mnt/c'
-alias D:='cd /mnt/d'
-alias python='cd /mnt/a/Coding/Python'
-alias 3.8='cd /mnt/a/Coding/Python/3.8'
-alias 3.7='cd /mnt/a/Coding/Python/3.7'
-alias 3.6='cd /mnt/a/Coding/Python/3.6'
-alias 3.5='cd /mnt/a/Coding/Python/3.5'
-alias research='cd /mnt/a/Research\ Lab'
-alias projects='vim /mnt/a/projects/projects'
-alias %appdata%='cd /mnt/c/users/natro/AppData/Roaming'
-
-# Microsoft Office suite
-alias pptx='/mnt/c/Program\ Files\ \(x86\)/Microsoft\ Office/root/Office16/POWERPNT.EXE &'
-alias word='/mnt/c/Program\ Files\ \(x86\)/Microsoft\ Office/root/Office16/WINWORD.EXE &'
-alias excel='/mnt/c/Program\ Files\ \(x86\)/Microsoft\ Office/root/Office16/EXCEL.EXE &'
-
 # Custom aliases
 alias ..='cd ..'
 alias v='vim .'
@@ -28,3 +10,5 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias g='googler --count 4'
+alias off='sudo python3.5 ~/light_test.py 0 1'
+alias on='sudo python3.5 ~/light_test.py 178 3'
