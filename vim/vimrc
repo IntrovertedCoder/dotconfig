@@ -43,12 +43,12 @@ highlight ColorColumn ctermbg=232
 " Python stuffz
 " For anything other then WSL use 3.8 or 3.7
 augroup pythonStuffz
-    au BufEnter *.py38 map <F7> <esc>:w\|!python38.exe "%"<CR>
-    au BufEnter *.py37 map <F7> <esc>:w\|!python37.exe "%"<CR>
-    au BufEnter *.py36 map <F7> <esc>:w\|!python36.exe "%"<CR>
-    au BufEnter *.py35 map <F7> <esc>:w\|!python35.exe "%"<CR>
+    au BufEnter *.py38 map <F7> <esc>:w\|!python3.8.exe "%"<CR>
+    au BufEnter *.py37 map <F7> <esc>:w\|!python3.7.exe "%"<CR>
+    au BufEnter *.py36 map <F7> <esc>:w\|!python3.6.exe "%"<CR>
+    au BufEnter *.py35 map <F7> <esc>:w\|!python3.5.exe "%"<CR>
     " Default python editor
-    au BufEnter *.py map <F7> <esc>:w\|!python3.8.8 "%"<CR>
+    au BufEnter *.py map <F7> <esc>:w\|!sudo python3.5 "%"<CR>
 augroup END
 
 augroup filetypePython
