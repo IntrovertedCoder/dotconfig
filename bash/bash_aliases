@@ -12,3 +12,9 @@ alias egrep='egrep --color=auto'
 alias g='googler --count 4'
 alias off='sudo python3.5 ~/light_test.py 0 1'
 alias on='sudo python3.5 ~/light_test.py 178 3'
+
+m ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
