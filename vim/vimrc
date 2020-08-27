@@ -73,6 +73,7 @@ nnoremap <leader><C-o> :vertical resize +2<CR>
 
 "File explorer
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 40<CR>
+nnoremap <leader>e :Explore<CR>
 
 " Enabling spellcheck
 nnoremap <leader>c :set spell<CR>
