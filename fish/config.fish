@@ -15,7 +15,7 @@ function update
     sudo apt-get autoremove
 end
 function ll
-    ls -alF
+    ls -alFh
 end
 function la
     ls -A
@@ -24,7 +24,11 @@ function l
     ls -CF
 end
 function g
-    googler --count 4
+    googler --count 4 -- $argv
+end
+function c
+    cd -- $argv
+    ls -A
 end
 
 # Faster hard drive navigation
