@@ -30,6 +30,10 @@ function mkdir
     command mkdir -- $argv
     cd -- $argv
 end
+function cd
+    builtin cd $argv
+    ls
+end
 
 # Faster hard drive navigation
 function A:
@@ -61,8 +65,10 @@ function research
     cd /mnt/a/Research\ Lab
 end
 function projects
-    cd /mnt/a/projects
+    set dir $PWD
+    builtin cd /mnt/a/projects
     vim /mnt/a/projects/projects
+    builtin cd $dir
 end
 function %appdata%
     cd /mnt/c/users/natro/AppData/Roaming
