@@ -34,7 +34,7 @@ function cd
     set cwd $PWD
     builtin cd $argv
     if [ $PWD != $cwd ]
-        ls
+        ls -Ahs
     end
 end
 
