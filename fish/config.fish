@@ -4,7 +4,7 @@ end
 
 # Custom Aliases
 function ..
-    c ..
+    cd ..
 end
 function v
     vim .
