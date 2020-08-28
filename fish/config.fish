@@ -28,7 +28,9 @@ function g
 end
 function mkdir
     command mkdir -- $argv
-    cd -- $argv
+    if [ $status = '0' ]
+        cd -- $argv
+    end
 end
 function cd
     set cwd $PWD
