@@ -4,7 +4,7 @@ end
 
 # Custom Aliases
 function ..
-    cd ..
+    c ..
 end
 function v
     vim .
@@ -26,9 +26,9 @@ end
 function g
     googler --count 4 -- $argv
 end
-function c
+function mkdir
+    command mkdir -- $argv
     cd -- $argv
-    ls -A
 end
 
 # Faster hard drive navigation
