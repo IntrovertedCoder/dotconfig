@@ -31,8 +31,11 @@ function mkdir
     cd -- $argv
 end
 function cd
+    set cwd $PWD
     builtin cd $argv
-    ls
+    if [ $PWD != $cwd ]
+        ls
+    end
 end
 
 # Faster hard drive navigation
