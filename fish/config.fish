@@ -39,6 +39,17 @@ function cd
         ls -Ahs
     end
 end
+function e
+    if count $argv > /dev/null
+        if test -e $argv
+            explorer.exe $argv
+        else
+            echo "Please select a folder in the current working directory"
+        end
+    else
+        explorer.exe .
+    end
+end
 
 # Faster hard drive navigation
 function A:
