@@ -10,9 +10,8 @@ function v
     vim .
 end
 function update
-    sudo apt-get update
-    sudo apt-get upgrade
-    sudo apt-get autoremove
+    sudo pacman -Syu
+    betterdiscordctl update
 end
 function ll
     ls -alFh
@@ -42,38 +41,24 @@ end
 function e
     if count $argv > /dev/null
         if test -e $argv
-            explorer.exe $argv
+            thunar $argv
         else
             echo "Please select a folder in the current working directory"
         end
     else
-        explorer.exe .
+        thunar .
     end
 end
 
 # Faster hard drive navigation
 function A:
-    cd /mnt/a
+    cd /run/media/arik/Storage
 end
 function C:
-    cd /mnt/c
+    cd /run/media/arik/74B89EF7B89EB758
 end
 function D:
-    cd /mnt/d
-end
-
-# Flash drive support
-function E:
-    cd /mnt/e
-end
-function mntE
-    mkdir /mnt/e
-    sudo mount -t drvfs e: /mnt/e
-    cd /mnt/e
-end
-function umntE
-    sudo umount /mnt/e
-    sudo rm -r /mnt/e
+    cd /run/media/arik/Random\ stuff/
 end
 
 # Common folders
@@ -85,9 +70,6 @@ function projects
     builtin cd /mnt/a/projects
     vim /mnt/a/projects/projects
     builtin cd $dir
-end
-function %appdata%
-    cd /mnt/c/users/natro/AppData/Roaming
 end
 
 # Microsoft Office Suite
