@@ -59,6 +59,8 @@ augroup filetypePython
     au BufNewFile,BufRead *.py35 set filetype=python
 augroup END
 
+au BufEnter *.c map <F7> <esc>:w\|!c "%"<CR>
+
 "Which window is selected
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>

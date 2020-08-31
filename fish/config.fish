@@ -49,6 +49,11 @@ function e
         thunar .
     end
 end
+function c
+    rm a.out
+    gcc $argv
+    ./a.out
+end
 
 # Faster hard drive navigation
 function A:
