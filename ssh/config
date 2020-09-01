@@ -1,5 +1,5 @@
 Host lights
     User Strontium
     Port 69
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/lights
     HostName 192.168.0.38
