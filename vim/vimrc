@@ -7,6 +7,9 @@ set number relativenumber
 colorscheme monokai-bold
 syntax on
 
+" Stop scrolling to bottom of window
+set scrolloff=5
+
 " Search options
 set hlsearch
 hi Search ctermbg=81
