@@ -51,6 +51,22 @@ function e
     end
 end
 
+# File scanning
+function scan
+    set cwd $PWD
+    builtin cd /
+    rm ~/files
+    ls -LR 1> ~/files 2> /dev/null
+    builtin cd $PWD
+end
+function finds
+    if count $argv > /dev/null
+        if test -e ~/files
+            cat ~/files | grep -i $argv
+        end
+    end
+end
+
 # Faster hard drive navigation
 function A:
     cd /mnt/a
