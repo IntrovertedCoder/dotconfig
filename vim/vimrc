@@ -7,6 +7,9 @@ set number relativenumber
 colorscheme monokai-bold
 syntax on
 
+" Stop scrolling to bottom of window
+set scrolloff=5
+
 " Search options
 set hlsearch
 hi Search ctermbg=81
@@ -27,6 +30,7 @@ map <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(systemlist("cd " .
 " Tab management
 set softtabstop=4 shiftwidth=4
 set expandtab
+set autoindent
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 retab
 
@@ -43,12 +47,12 @@ highlight ColorColumn ctermbg=232
 " Python stuffz
 " For anything other then WSL use 3.8 or 3.7
 augroup pythonStuffz
-    au BufEnter *.py38 map <F7> <esc>:w\|!python3.8.exe "%"<CR>
-    au BufEnter *.py37 map <F7> <esc>:w\|!python3.7.exe "%"<CR>
-    au BufEnter *.py36 map <F7> <esc>:w\|!python3.6.exe "%"<CR>
-    au BufEnter *.py35 map <F7> <esc>:w\|!python3.5.exe "%"<CR>
+    au BufEnter *.py38 map <F7> <esc>:w\|!python38.exe "%"<CR>
+    au BufEnter *.py37 map <F7> <esc>:w\|!python37.exe "%"<CR>
+    au BufEnter *.py36 map <F7> <esc>:w\|!python36.exe "%"<CR>
+    au BufEnter *.py35 map <F7> <esc>:w\|!python35.exe "%"<CR>
     " Default python editor
-    au BufEnter *.py map <F7> <esc>:w\|!sudo python3.5 "%"<CR>
+    au BufEnter *.py map <F7> <esc>:w\|!python3.8.8 "%"<CR>
 augroup END
 
 augroup filetypePython
@@ -72,6 +76,7 @@ nnoremap <leader><C-o> :vertical resize +2<CR>
 
 "File explorer
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 40<CR>
+nnoremap <leader>e :Explore<CR>
 
 " Enabling spellcheck
 nnoremap <leader>c :set spell<CR>
