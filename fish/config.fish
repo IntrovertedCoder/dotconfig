@@ -50,13 +50,18 @@ function e
         explorer.exe .
     end
 end
+function c
+    rm a.out
+    gcc $argv
+    ./a.out
+end
 
 # File scanning
 function scan
     set cwd $PWD
     builtin cd /
     rm ~/files
-    ls -LR 1> ~/files 2> /dev/null
+    find / 1> ~/files 2> /dev/null
     builtin cd $PWD
 end
 function finds
