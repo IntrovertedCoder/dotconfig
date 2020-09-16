@@ -62,7 +62,7 @@ function scan
     builtin cd /
     rm ~/files
     find / 1> ~/files 2> /dev/null
-    builtin cd $PWD
+    builtin cd $cwd
 end
 function finds
     if count $argv > /dev/null
