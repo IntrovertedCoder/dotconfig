@@ -67,7 +67,7 @@ end
 function finds
     if count $argv > /dev/null
         if test -e ~/files
-            cat ~/files | grep -i $argv
+            grep -i $argv ~/files
         end
     end
 end
