@@ -21,6 +21,9 @@ set backupdir^=$HOME/.vim/bak//
 set undodir^=$HOME/.vim/undo//
 set undofile
 
+" Adding undotree to space+u
+nnoremap <leader>u :UndotreeToggle<CR>
+
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -61,6 +64,8 @@ augroup filetypePython
     au BufNewFile,BufRead *.py36 set filetype=python
     au BufNewFile,BufRead *.py35 set filetype=python
 augroup END
+
+au BufEnter *.c map <F7> <esc>:w\|!c "%"<CR>
 
 "Which window is selected
 nnoremap <leader>h :wincmd h<CR>
