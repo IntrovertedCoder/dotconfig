@@ -47,6 +47,7 @@ end
 function off
     sudo python3.5 ~/light_test.py 0 1
     sudo python3.5 ~/light_test.py 0 1
+end
 
 # File scanning
 function scan
