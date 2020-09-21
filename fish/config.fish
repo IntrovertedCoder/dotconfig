@@ -39,3 +39,12 @@ function cd
         ls -Ahs
     end
 end
+
+# Light commands
+function on
+    sudo python3.5 ~/light_test.py 178 3
+end
+function off
+    sudo python3.5 ~/light_test.py 0 1
+    sudo python3.5 ~/light_test.py 0 1
+end
