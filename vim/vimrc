@@ -132,3 +132,8 @@ set title
 nnoremap <F11> :vertical wincmd f<CR>
 nnoremap <F12> :wincmd f<CR>
 nnoremap <leader>gf :e <cfile><CR>
+
+" Colorizer keybinds
+nnoremap <leader>m :ColorToggle<CR>
+nnoremap <leader>8 :RGB2Term #
+nnoremap <leader>9 :Term2RGB<SPACE>
