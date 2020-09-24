@@ -22,7 +22,7 @@ set undodir^=$HOME/.vim/undo//
 set undofile
 
 " Adding undotree to space+u
-nnoremap <leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30<CR>
+nnoremap <silent><leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30<CR>
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
@@ -71,42 +71,42 @@ augroup END
 au BufEnter *.c map <F7> <esc>:w\|!c "%"<CR>
 
 "Which window is selected
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
+nnoremap <silent><leader>h :wincmd h<CR>
+nnoremap <silent><leader>j :wincmd j<CR>
+nnoremap <silent><leader>k :wincmd k<CR>
+nnoremap <silent><leader>l :wincmd l<CR>
 
 " Resizing windows (Leader + ctrl + yuio)
-nnoremap <leader><C-u> :resize -2<CR>
-nnoremap <leader><C-i> :resize +2<CR>
-nnoremap <leader><C-y> :vertical resize -2<CR>
-nnoremap <leader><C-o> :vertical resize +2<CR>
+nnoremap <silent><leader><C-u> :resize -2<CR>
+nnoremap <silent><leader><C-i> :resize +2<CR>
+nnoremap <silent><leader><C-y> :vertical resize -2<CR>
+nnoremap <silent><leader><C-o> :vertical resize +2<CR>
 
 "File explorer
-nnoremap <leader>e :Lex<CR> :vertical resize 30<CR>
+nnoremap <silent><leader>e :Lex<CR> :vertical resize 30<CR>
 
 " Enabling spellcheck
-nnoremap <leader>c :set spell<CR>
+nnoremap <silent><leader>c :set spell<CR>
 
 " Yank line
-nnoremap <leader>y ^<C-v>$y
+nnoremap <silent><leader>y ^<C-v>$y
 
 "Split window
-nnoremap <F3> :wincmd v<CR>
-nnoremap <F4> :split<CR>
+nnoremap <silent><F3> :wincmd v<CR>
+nnoremap <silent><F4> :split<CR>
 
 " Commenting and uncommenting
-nnoremap <leader>w ^<S-i># <Esc><Esc>h
-nnoremap <leader>s ^xx
+nnoremap <silent><leader>w ^<S-i># <Esc><Esc>h
+nnoremap <silent><leader>s ^xx
         "Comment and move
-        nnoremap <leader>[ ^<S-i># <Esc><Esc>hk
-        nnoremap <leader>] ^xk
-        nnoremap <leader>; ^<S-i># <Esc><Esc>hj
-        nnoremap <leader>' ^xj
+        nnoremap <silent><leader>[ ^<S-i># <Esc><Esc>hk
+        nnoremap <silent><leader>] ^xk
+        nnoremap <silent><leader>; ^<S-i># <Esc><Esc>hj
+        nnoremap <silent><leader>' ^xj
 
 " Quickly insert an empty new line without entering insert mode
-nnoremap <Leader>o o<Esc>
-nnoremap <Leader>O O<Esc>
+nnoremap <<silent>Leader>o o<Esc>
+nnoremap <<silent>Leader>O O<Esc>
 
 " Unmapping ex mode
 nnoremap Q <nop>
@@ -126,17 +126,17 @@ set laststatus=2  " Enable status line for all files
 set list listchars=tab:>\ ,trail:+,eol:$
 
 " Get current song (Space + F2)
-map <leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
+map <silent><leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
 
 set visualbell
 set title
 
 "Open files/create files
-nnoremap <F11> :vertical wincmd f<CR>
-nnoremap <F12> :wincmd f<CR>
-nnoremap <leader>gf :e <cfile><CR>
+nnoremap <silent><F11> :vertical wincmd f<CR>
+nnoremap <silent><F12> :wincmd f<CR>
+nnoremap <silent><leader>gf :e <cfile><CR>
 
 " Colorizer keybinds
-nnoremap <leader>m :ColorToggle<CR>
-nnoremap <leader>8 :RGB2Term #
-nnoremap <leader>9 :Term2RGB<SPACE>
+nnoremap <silent><leader>m :ColorToggle<CR>
+nnoremap <silent><leader>8 :RGB2Term #
+nnoremap <silent><leader>9 :Term2RGB<SPACE>
