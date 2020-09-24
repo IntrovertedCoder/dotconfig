@@ -27,8 +27,11 @@ nnoremap <silent><leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+" GIT HUB KEYBINDS
 " Show git commit that added line
 map <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(systemlist("cd " . shellescape(fnamemodify(resolve(expand('%:p')), ":h")) . " && git log --no-merges -n 1 -L " . shellescape(line("v") . "," . line(".") . ":" . resolve(expand("%:p")))), { "padding": [1,1,1,1], "pos": "botleft", "wrap": 0 })), "&filetype", "git")<CR>
+nnoremap <silent><leader>t :silent !lazygit<CR> :redraw!<CR>
+nnoremap <silent><leader>b :silent !git push<CR> :redraw!<CR>
 
 "Set space+s to substitute the word under the cursor
 nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
