@@ -22,7 +22,7 @@ set undodir^=$HOME/.vim/undo//
 set undofile
 
 " Adding undotree to space+u
-nnoremap <leader>u :UndotreeToggle<CR>
+nnoremap <leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30<CR>
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
@@ -83,7 +83,7 @@ nnoremap <leader><C-y> :vertical resize -2<CR>
 nnoremap <leader><C-o> :vertical resize +2<CR>
 
 "File explorer
-nnoremap <leader>e :Lex<CR> :vertical resize 20<CR>
+nnoremap <leader>e :Lex<CR> :vertical resize 30<CR>
 
 " Enabling spellcheck
 nnoremap <leader>c :set spell<CR>
