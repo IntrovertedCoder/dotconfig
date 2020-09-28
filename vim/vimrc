@@ -1,61 +1,128 @@
+" Custom keybinds {{{
 let mapleader = " "
 
-" Line numbers
-set number relativenumber
+" Open and create files inside files {{{
+" Open file in vertical split
+nnoremap <silent><F11> :vertical wincmd f<CR>
+" Open file in horizontal split
+nnoremap <silent><F12> :wincmd f<CR>
+" Create file and file dir
+nnoremap <silent><leader>gf :e <cfile><CR>
+" }}}
 
-" Colors
-colorscheme monokai-bold
-syntax on
+" Commenting and uncommenting (Python) {{{
+" Without moving {{{
+" Comment line
+nnoremap <silent><leader>w ^<S-i># <Esc><Esc>h
+" Uncomment line
+nnoremap <silent><leader>s ^xx
+" }}}
+" Moving down {{{
+nnoremap <silent><leader>; ^<S-i># <Esc><Esc>hj
+nnoremap <silent><leader>' ^xxj
+" }}}
+" Moving up {{{
+nnoremap <silent><leader>[ ^<S-i># <Esc><Esc>hk
+nnoremap <silent><leader>] ^xxk
+" }}}
+" }}}
 
-" Stop scrolling to bottom of window
+" Window Management {{{
+" Window Splitting {{{
+nnoremap <silent><F3> :wincmd v<CR>
+nnoremap <silent><F4> :split<CR>
+" }}}
+
+" Window Selection {{{
+nnoremap <silent><leader>h :wincmd h<CR>
+nnoremap <silent><leader>j :wincmd j<CR>
+nnoremap <silent><leader>k :wincmd k<CR>
+nnoremap <silent><leader>l :wincmd l<CR>
+" }}}
+
+" Window Resizing {{{
+" Resizing windows (Leader + ctrl + yuio)
+nnoremap <silent><leader><C-u> :resize -2<CR>
+nnoremap <silent><leader><C-i> :resize +2<CR>
+nnoremap <silent><leader><C-y> :vertical resize -2<CR>
+nnoremap <silent><leader><C-o> :vertical resize +2<CR>
+" }}}
+" }}}
+" Get current song (Space + F2)
+" Space+F2 (Doesn't work in WSL)
+map <silent><leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
+
+"File explorer
+" Space+e
+nnoremap <silent><leader>e :Lex<CR> :vertical resize 30<CR>
+
+" Enabling spellcheck
+" Space+c
+nnoremap <silent><leader>c :set spell<CR>
+
+" Yank line
+" Space+y
+nnoremap <silent><leader>y ^<C-v>$y
+
+
+" Quickly insert an empty new line without entering insert mode
+" Space+o or space+O
+nnoremap <silent><Leader>o o<Esc>
+nnoremap <silent><Leader>O O<Esc>
+
+" View weather with darksky api (Functional until end of 2021)
+" F2
+map <F2> :!weather <CR>
+
+" Replace word under cursor with inputted text over entire file
+" Space+r
+nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
+" }}}
+
+" Scrolling/line numbers {{{
 set scrolloff=5
+set number
+set relativenumber
+" }}}
 
-" Search options
+" Folding {{{
+set foldmethod=marker
+nnoremap <CR> za
+" }}}
+
+" Searching {{{
 set hlsearch
 hi Search ctermbg=81
 nnoremap <leader>q :noh<CR>
+" }}}
 
-" Chaning .swp, .bak, and undo location
+" Changing swp/bak/undo locations {{{
+set undofile
 set directory^=$HOME/.vim/swp//
 set backupdir^=$HOME/.vim/bak//
 set undodir^=$HOME/.vim/undo//
-set undofile
+" }}}
 
-" Adding undotree to space+u
-nnoremap <silent><leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30<CR>
-
-" Remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
-
-" GIT HUB KEYBINDS
+" Github keybinds {{{
 " Show git commit that added line
 map <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(systemlist("cd " . shellescape(fnamemodify(resolve(expand('%:p')), ":h")) . " && git log --no-merges -n 1 -L " . shellescape(line("v") . "," . line(".") . ":" . resolve(expand("%:p")))), { "padding": [1,1,1,1], "pos": "botleft", "wrap": 0 })), "&filetype", "git")<CR>
 nnoremap <silent><leader>t :silent !lazygit<CR> :redraw!<CR>
 nnoremap <silent><leader>b :silent !git push<CR> :redraw!<CR>
+" }}}
 
-"Set space+s to substitute the word under the cursor
-nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
-
-" Tab management
+" Tabbing {{{
 set softtabstop=4 shiftwidth=4
 set expandtab
 set autoindent
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 retab
+" }}}
 
-" Better word wrapping to prevent words from being split in the middle
-set linebreak
-
-" Weather
-map <F2> :!weather <CR>
-
-" Add line at letter 80 for pep8 compliance
-set colorcolumn=80
-highlight ColorColumn ctermbg=232
-
-" Python stuffz
-" For anything other then WSL use 3.8 or 3.7
+" Coding {{{
+" Python {{{
+" Python Compiler {{{
 augroup pythonStuffz
+    " For anything other then WSL use 3.8 or 3.7
     au BufEnter *.py38 map <F7> <esc>:w\|!python38.exe "%"<CR>
     au BufEnter *.py37 map <F7> <esc>:w\|!python37.exe "%"<CR>
     au BufEnter *.py36 map <F7> <esc>:w\|!python36.exe "%"<CR>
@@ -63,58 +130,34 @@ augroup pythonStuffz
     " Default python editor
     au BufEnter *.py map <F7> <esc>:w\|!python3.8.8 "%"<CR>
 augroup END
-
+" }}}
+" Detecting filetypes based off ext {{{
 augroup filetypePython
     au BufNewFile,BufRead *.py38 set filetype=python
     au BufNewFile,BufRead *.py37 set filetype=python
     au BufNewFile,BufRead *.py36 set filetype=python
     au BufNewFile,BufRead *.py35 set filetype=python
 augroup END
+" }}}
+" }}}
 
+" C {{{
 au BufEnter *.c map <F7> <esc>:w\|!c "%"<CR>
+" }}}
+" }}}
 
-"Which window is selected
-nnoremap <silent><leader>h :wincmd h<CR>
-nnoremap <silent><leader>j :wincmd j<CR>
-nnoremap <silent><leader>k :wincmd k<CR>
-nnoremap <silent><leader>l :wincmd l<CR>
-
-" Resizing windows (Leader + ctrl + yuio)
-nnoremap <silent><leader><C-u> :resize -2<CR>
-nnoremap <silent><leader><C-i> :resize +2<CR>
-nnoremap <silent><leader><C-y> :vertical resize -2<CR>
-nnoremap <silent><leader><C-o> :vertical resize +2<CR>
-
-"File explorer
-nnoremap <silent><leader>e :Lex<CR> :vertical resize 30<CR>
-
-" Enabling spellcheck
-nnoremap <silent><leader>c :set spell<CR>
-
-" Yank line
-nnoremap <silent><leader>y ^<C-v>$y
-
-"Split window
-nnoremap <silent><F3> :wincmd v<CR>
-nnoremap <silent><F4> :split<CR>
-
-" Commenting and uncommenting
-nnoremap <silent><leader>w ^<S-i># <Esc><Esc>h
-nnoremap <silent><leader>s ^xx
-        "Comment and move
-        nnoremap <silent><leader>[ ^<S-i># <Esc><Esc>hk
-        nnoremap <silent><leader>] ^xk
-        nnoremap <silent><leader>; ^<S-i># <Esc><Esc>hj
-        nnoremap <silent><leader>' ^xj
-
-" Quickly insert an empty new line without entering insert mode
-nnoremap <silent><Leader>o o<Esc>
-nnoremap <silent><Leader>O O<Esc>
-
-" Unmapping ex mode
+" Unmapping {{{
 nnoremap Q <nop>
+nnoremap q <nop>
+" }}}
 
-" Status line settings
+" Theming {{{
+" Colorscheme {{{
+colorscheme monokai-bold
+syntax on
+" }}}
+
+" Statusline {{{
 set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=\ %M
@@ -124,22 +167,42 @@ set statusline+=%= " Right side settings
 set statusline+=\ %l:%L
 set statusline+=\ %p%%
 set laststatus=2  " Enable status line for all files
+" }}}
+
+" Color column {{{
+set colorcolumn=80
+highlight ColorColumn ctermbg=232
+" }}}
+" }}}
+
+" Plugin Keybinds {{{
+" Colorizer {{{
+" Sets space+m to toggle colorizing
+nnoremap <silent><leader>m :ColorToggle<CR>
+" Sets space+8 to convert rgb to xterm colors
+nnoremap <silent><leader>8 :RGB2Term #
+" Sets space+9 to convert from xterm to rgb colors
+nnoremap <silent><leader>9 :Term2RGB<SPACE>
+" }}}
+
+" Undotree {{{
+" Maps undotree to space+u along with resizing to be 30 spaces
+nnoremap <silent><leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30<CR>
+" }}}
+" }}}
+
+" Random {{{
 
 " See invisible characters
 set list listchars=tab:>\ ,trail:+,eol:$
 
-" Get current song (Space + F2)
-map <silent><leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
-
 set visualbell
 set title
 
-"Open files/create files
-nnoremap <silent><F11> :vertical wincmd f<CR>
-nnoremap <silent><F12> :wincmd f<CR>
-nnoremap <silent><leader>gf :e <cfile><CR>
+" Better word wrapping to prevent words from being split in the middle
+set linebreak
 
-" Colorizer keybinds
-nnoremap <silent><leader>m :ColorToggle<CR>
-nnoremap <silent><leader>8 :RGB2Term #
-nnoremap <silent><leader>9 :Term2RGB<SPACE>
+" Remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
+" }}}
