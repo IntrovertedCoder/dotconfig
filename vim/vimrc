@@ -108,8 +108,8 @@ nnoremap <silent><leader>s ^xx
         nnoremap <silent><leader>' ^xj
 
 " Quickly insert an empty new line without entering insert mode
-nnoremap <<silent>Leader>o o<Esc>
-nnoremap <<silent>Leader>O O<Esc>
+nnoremap <silent><Leader>o o<Esc>
+nnoremap <silent><Leader>O O<Esc>
 
 " Unmapping ex mode
 nnoremap Q <nop>
