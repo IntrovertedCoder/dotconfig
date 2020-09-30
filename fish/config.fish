@@ -71,6 +71,11 @@ function finds
         end
     end
 end
+function findc
+    if count $argv > /dev/null
+        grep $PWD ~/files | grep -i $argv
+    end
+end
 
 # Faster hard drive navigation
 function A:
