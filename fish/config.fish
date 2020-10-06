@@ -1,5 +1,4 @@
 function fish_greeting
-    clear
 end
 
 # Custom Aliases

@@ -20,7 +20,7 @@ function fish_prompt
     set -g __fish_git_prompt_char_upstream_equal "="
 
     if test -n "$SSH_TTY"
-        echo -n (set_color red)'$USER'(set_color white)'@'(set_color yellow)(prompt_hostname)' '
+        echo -n (set_color yellow)(prompt_hostname)' '
     end
 
     echo -n (set_color 3a3a3a)(prompt_pwd)
