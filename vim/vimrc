@@ -95,6 +95,11 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 " }}}
 
 " Folding {{{
+
+    " Making folds on commands {{{
+        nnoremap <leader>= A{{{<CR><CR>}}}<ESC>k
+        inoremap <F3> <space>{{{<CR><CR>}}}<ESC>ki
+    " }}}
     set foldmethod=marker
     nnoremap <CR> za
 " }}}
@@ -121,6 +126,7 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 
 " Tabbing {{{
     set softtabstop=4 shiftwidth=4
+    set tabstop=4
     set expandtab
     set autoindent
     let g:indentLine_char_list = ['|', '¦', '┆', '┊']
@@ -203,7 +209,7 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 " Random {{{
 
     " See invisible characters
-    set list listchars=tab:>\ ,trail:+,eol:$
+    set list listchars=tab:\|\ ,trail:+,eol:$
 
     set visualbell
     set title
