@@ -26,8 +26,8 @@ end
 function g
     googler --count 4 -- $argv
 end
-function mkdir
-    command mkdir -- $argv
+function mkcd
+    mkdir -- $argv
     if [ $status = '0' ]
         cd -- $argv
     end
@@ -69,6 +69,11 @@ function finds
         if test -e ~/files
             grep -i $argv ~/files
         end
+    end
+end
+function findc
+    if count $argv > /dev/null
+        grep $PWD ~/files | grep -i $argv
     end
 end
 
