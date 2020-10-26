@@ -26,8 +26,8 @@ end
 function g
     googler --count 4 -- $argv
 end
-function mkdir
-    command mkdir -- $argv
+function mkcd
+    mkdir -- $argv
     if [ $status = '0' ]
         cd -- $argv
     end
