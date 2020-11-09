@@ -1,3 +1,4 @@
+:Abolish	abolish.txt	/*:Abolish*
 :ColorClear	Colorizer.txt	/*:ColorClear*
 :ColorContrast	Colorizer.txt	/*:ColorContrast*
 :ColorHighlight	Colorizer.txt	/*:ColorHighlight*
@@ -5,6 +6,8 @@
 :ColorToggle	Colorizer.txt	/*:ColorToggle*
 :HSL2RGB	Colorizer.txt	/*:HSL2RGB*
 :RGB2Term	Colorizer.txt	/*:RGB2Term*
+:S	abolish.txt	/*:S*
+:Subvert	abolish.txt	/*:Subvert*
 :Term2RGB	Colorizer.txt	/*:Term2RGB*
 Colorizer	Colorizer.txt	/*Colorizer*
 Colorizer-auto	Colorizer.txt	/*Colorizer-auto*
@@ -28,6 +31,16 @@ Colorizer-vim-files	Colorizer.txt	/*Colorizer-vim-files*
 Colorizer-vim-hi	Colorizer.txt	/*Colorizer-vim-hi*
 Colorizer.txt	Colorizer.txt	/*Colorizer.txt*
 Undotree_CustomMap	undotree.txt	/*Undotree_CustomMap*
+abolish	abolish.txt	/*abolish*
+abolish-abbrev	abolish.txt	/*abolish-abbrev*
+abolish-coercion	abolish.txt	/*abolish-coercion*
+abolish-coercion-reversible	abolish.txt	/*abolish-coercion-reversible*
+abolish-grep	abolish.txt	/*abolish-grep*
+abolish-patterns	abolish.txt	/*abolish-patterns*
+abolish-search	abolish.txt	/*abolish-search*
+abolish-substitute	abolish.txt	/*abolish-substitute*
+abolish.txt	abolish.txt	/*abolish.txt*
+cr	abolish.txt	/*cr*
 undotree-bugs	undotree.txt	/*undotree-bugs*
 undotree-changelog	undotree.txt	/*undotree-changelog*
 undotree-config	undotree.txt	/*undotree-config*
