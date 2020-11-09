@@ -8,3 +8,8 @@ Host server
     Port 69
     IdentityFile ~/.ssh/server
     HostName 192.168.0.36
+Host files
+    User files
+    Port 69
+    IdentityFile ~/.ssh/files
+    HostName 192.168.0.38
