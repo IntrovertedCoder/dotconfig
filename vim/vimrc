@@ -162,8 +162,8 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 " }}}
 
 " Unmapping {{{
-    nnoremap Q <nop>
-    nnoremap q <nop>
+    " nnoremap Q <nop>
+    " nnoremap q <nop>
 " }}}
 
 " Theming {{{
