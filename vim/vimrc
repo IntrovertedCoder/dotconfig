@@ -63,7 +63,7 @@ map <silent><leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
 
 "File explorer
 " Space+e
-nnoremap <silent><leader>e :Lex<CR> :vertical resize 30<CR>
+nnoremap <silent><leader>e :Lex!<CR> :vertical resize 40<CR>
 
 " Enabling spellcheck
 " Space+c
@@ -201,8 +201,10 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
     " }}}
 
     " Undotree {{{
+        " Set to right side
+        let g:undotree_WindowLayout=3
         " Maps undotree to space+u along with resizing to be 30 spaces
-        nnoremap <silent><leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 30<CR>
+        nnoremap <silent><leader>u :UndotreeToggle<CR> :wincmd h<CR> :vertical resize 86<CR>
     " }}}
 " }}}
 
