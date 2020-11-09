@@ -1,0 +1,28 @@
+*chars.txt* Quick custom chars
+
+Greek Letters {{{
+    Alpha = α <cK>a* (ag, Ag)
+    Beta = β Β (bg, Bg)
+    Gamma = γ Γ (gg, Gg)
+    Delta = δ <cK>d* (dg, Dg)
+    Epsilon = ε Ε (eg, Eg)
+    Zeta = ζ Ζ (zg, Zg)
+    Eta = η Η (eg, Eg)
+    Theta = θ Θ (hg, Hg)
+    Iota = ι <cK>i* (ig, Ig)
+    Kappa = κ Κ (kg, Kg)
+    Lamda = λ Λ (lg, Lg)
+    Mu = μ Μ (mg, Mg)
+    Nu = ν <cK>n* (ng, Ng)
+    Xi = ξ Ξ (cg, Cg)
+    Omicron = ο Ο (og, Og)
+    Pi = π Π (pg, Pg)
+    Rho = ρ Ρ (rg, Rg)
+    Sigma = σ <cK>s* (sg, Sg)
+    Tau = τ Τ (tg, Tg)
+    Upsilon = υ Υ (ug, Ug)
+    Phi = φ <cK>f* (qg, Qg)
+    Chi = χ <cK>x* (xg, Xg)
+    Psi = ψ <cK>q* (qg, Qg)
+    Omega = ω Ω (wg, Wg)
+}}}
