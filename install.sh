@@ -10,3 +10,4 @@ sudo ln -s ~/.config/dots/bin/googler /bin/googler
 
 sudo apt install tree
 sudo apt install wget
+sudo ln -s ~/.config/dots/scripts/scan /bin/scan

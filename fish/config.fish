@@ -57,13 +57,6 @@ function c
 end
 
 # File scanning
-function scan
-    set cwd $PWD
-    builtin cd /
-    rm ~/files
-    find / 1> ~/files 2> /dev/null
-    builtin cd $cwd
-end
 function finds
     if count $argv > /dev/null
         if test -e ~/files
