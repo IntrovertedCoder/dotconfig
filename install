@@ -15,6 +15,10 @@ if [ $? -eq 0 ]; then
     sudo apt install bash-completion -y
     sudo apt install ssh -y
     sudo apt install htop -y
+    sudo apt install curl -y
+    sudo apt install wget -y
+    sudo apt install cron -y
+    sudo apt install lazygit -y
     # sudo apt install -y
 fi
 # }}}
