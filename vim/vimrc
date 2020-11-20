@@ -138,10 +138,10 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
     " Python Compiler {{{
         augroup pythonStuffz
             " For anything other then WSL use 3.8 or 3.7
-            au BufEnter *.py38 map <F7> <esc>:w\|!python38.exe "%"<CR>
-            au BufEnter *.py37 map <F7> <esc>:w\|!python37.exe "%"<CR>
-            au BufEnter *.py36 map <F7> <esc>:w\|!python36.exe "%"<CR>
-            au BufEnter *.py35 map <F7> <esc>:w\|!python35.exe "%"<CR>
+            au BufEnter *.py38 map <F7> <esc>:w\|!python3.8 "%"<CR>
+            au BufEnter *.py37 map <F7> <esc>:w\|!python3.7 "%"<CR>
+            au BufEnter *.py36 map <F7> <esc>:w\|!python3.6 "%"<CR>
+            au BufEnter *.py35 map <F7> <esc>:w\|!python3.5 "%"<CR>
             " Default python editor
             au BufEnter *.py map <F7> <esc>:w\|!python3.8.8 "%"<CR>
         augroup END
