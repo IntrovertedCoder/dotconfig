@@ -44,6 +44,7 @@ if [ $? -eq 0 ]; then
     sudo pacman -Sy git
     sudo pacman -Sy ssh
     sudo pacman -Sy htop
+    sudo pacman -Sy lazygit
     # sudo pacman -Sy
 fi
 # }}}
