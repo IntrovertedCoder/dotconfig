@@ -17,6 +17,9 @@ end
 function ll
     ls -alFh
 end
+function lt
+    ls -hs1Sc
+end
 function la
     ls -A
 end
