@@ -1,27 +1,48 @@
 #! /bin/bash
 
+center(){
+	COLUMNS=$(tput cols)
+	title="$*"
+	tput setaf 81; printf "%*s\n" $(((${#title}+$COLUMNS)/2)) "$title"
+}
+
 # Tell if debian based {{{
 cd /etc/apt 2> /dev/null
 if [ $? -eq 0 ]; then
+    center "UPDATE"
     sudo apt update -y
+    center "UPGRADE"
     sudo apt upgrade -y
+    center "AUTOREMOVE"
     sudo apt autoremove -y
+    center "AUTOCLEAN"
     sudo apt autoclean -y
+    center "vim"
     sudo apt install vim -y
+    center "tmux"
     sudo apt install tmux -y
+    center "tree"
     sudo apt install tree -y
+    center "wget"
     sudo apt install wget -y
+    center "fish"
     sudo apt install fish -y
+    center "git"
     sudo apt install git -y
+    center "bash-completion"
     sudo apt install bash-completion -y
+    center "ssh"
     sudo apt install ssh -y
+    center "htop"
     sudo apt install htop -y
+    center "curl"
     sudo apt install curl -y
+    center "wget"
     sudo apt install wget -y
+    center "cron"
     sudo apt install cron -y
+    center "lazygit"
     sudo apt install lazygit -y
-    # Move these to a coding install list?
-    sudo apt install gcc -y
     # sudo apt install -y
 fi
 # }}}
@@ -39,15 +60,27 @@ fi
 # Tell if arch based {{{
 cd /etc/pacman.d 2> /dev/null
 if [ $? -eq 0 ]; then
+    center "UPDATE"
+    sudo pacman -Syu
+    center "vim"
     sudo pacman -Syu vim
+    center "tmux"
     sudo pacman -Sy tmux
+    center "tree"
     sudo pacman -Sy tree
+    center "wget"
     sudo pacman -Sy wget
+    center "fish"
     sudo pacman -Sy fish
+    center "git"
     sudo pacman -Sy git
+    center "ssh"
     sudo pacman -Sy ssh
+    center "htop"
     sudo pacman -Sy htop
+    center "yay"
     sudo pacman -Sy yay
+    center "lazygit (AUR)"
     echo 1 | yay lazygit  # Untested so far
     # sudo pacman -Sy
 fi
