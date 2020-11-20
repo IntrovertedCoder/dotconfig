@@ -19,6 +19,8 @@ if [ $? -eq 0 ]; then
     sudo apt install wget -y
     sudo apt install cron -y
     sudo apt install lazygit -y
+    # Move these to a coding install list?
+    sudo apt install gcc -y
     # sudo apt install -y
 fi
 # }}}
@@ -44,7 +46,8 @@ if [ $? -eq 0 ]; then
     sudo pacman -Sy git
     sudo pacman -Sy ssh
     sudo pacman -Sy htop
-    sudo pacman -Sy lazygit
+    sudo pacman -Sy yay
+    echo 1 | yay lazygit  # Untested so far
     # sudo pacman -Sy
 fi
 # }}}
