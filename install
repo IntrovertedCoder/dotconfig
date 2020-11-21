@@ -3,7 +3,7 @@
 center(){
 	COLUMNS=$(tput cols)
 	title="$*"
-	tput setaf 81; printf "%*s\n" $(((${#title}+$COLUMNS)/2)) "$title"
+	tput setaf 81; printf "%*s\n" $(((${#title}+$COLUMNS)/2)) "$title"; tput sgr0
 }
 
 # Tell if debian based {{{
