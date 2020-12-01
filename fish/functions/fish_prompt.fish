@@ -27,9 +27,11 @@ function fish_prompt
 
     set_color -o
     if test "$USER" = 'root'
-        echo -n (set_color red)'# '
+        printf '%s' (set_color ffffff)('__fish_git_prompt')
+        echo -n (set_color 00ff00)' # '
+    else
+        printf '%s' (set_color ffffff)('__fish_git_prompt')
+        echo -n (set_color ff005f)' $ '
     end
-    printf '%s' (set_color ffffff)('__fish_git_prompt')
-    echo -n (set_color ff005f)' >>> '
     set_color normal
 end
