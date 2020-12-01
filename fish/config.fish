@@ -1,5 +1,9 @@
 function fish_greeting
-    clear
+    if test -n "$SSH_TTY"
+    else if test "$USER" = 'root'
+    else
+        clear
+    end
 end
 
 # Custom Aliases
