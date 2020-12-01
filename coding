@@ -1,0 +1,42 @@
+#! /bin/bash
+
+center(){
+    COLUMNS=$(tput cols)
+    title="$*"
+    tput setaf 81; printf "%*s\n" $(((${#title}+$COLUMNS)/2)) "$title"; tput sgr0
+}
+
+# Tell if debian based {{{
+cd /etc/apt 2> /dev/null
+if [ $? -eq 0 ]; then
+    center "python"
+    sudo apt install python3.8 -y
+    center "pip"
+    sudo apt install python3-pip -y
+    center "pip modules"
+    center "matplotlib"
+    python3 -m pip install matplotlib
+    center "youtube-dl"
+    python3 -m pip install youtube-dl
+    center "spotdl"
+    python3 -m pip install spotdl
+    center "pandas"
+    python3 -m pip install pandas
+    center "scipy"
+    python3 -m pip install scipy
+    center "build-essentials"
+    sudo apt install build-essential
+fi
+# }}}
+
+# Tell if rpm or redhat {{{
+cd /etc/rpm 2> /dev/null
+if [ $? -eq 0 ]; then
+fi
+# }}}
+
+# Tell if arch based {{{
+cd /etc/pacman.d 2> /dev/null
+if [ $? -eq 0 ]; then
+fi
+# }}}
