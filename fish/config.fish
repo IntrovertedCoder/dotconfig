@@ -1,7 +1,7 @@
 function fish_greeting
-    if test -n "$SSH_TTY"
-    else if test "$USER" = 'root'
-    else
+    if test -n "$SSH_TTY"  # Tell if running on ssh
+    else if test "$USER" = 'root'  # Or if root
+    else  # If neither then clear
         clear
     end
 end
