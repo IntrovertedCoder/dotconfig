@@ -43,6 +43,8 @@ if [ $? -eq 0 ]; then
     sudo apt install cron -y
     center "lazygit"
     sudo apt install lazygit -y
+    center "youtube-dl"
+    sudo apt install youtube-dl -y
     # sudo apt install -y
 fi
 # }}}
