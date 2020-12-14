@@ -89,7 +89,7 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 
 " Custom word wrapping remap
 " Space+w
-nnoremap <leader>w 80\|F<space>xi<CR><esc>
+nnoremap <leader>z 80\|F<space>xi<CR><esc>
 " }}}
 
 " Scrolling/line numbers {{{
