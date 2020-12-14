@@ -88,8 +88,13 @@ map <F2> :!weather <CR>
 nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 
 " Custom word wrapping remap
-" Space+w
+" Space+z
 nnoremap <leader>z 80\|F<space>xi<CR><esc>
+
+" Insert chat at cursor pos {{{
+nnoremap <leader>i i <ESC>r
+nnoremap <leader>a a <ESC>r
+" }}}
 " }}}
 
 " Scrolling/line numbers {{{
