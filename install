@@ -109,6 +109,8 @@ fi
     ln -s ~/.config/dots/fish ~/.config/fish
     rm ~/.config/alacritty
     ln -s ~/.config/dots/alacritty ~/.config/alacritty
+    rm ~/.config/sway
+    ln -s ~/.config/dots/sway ~/.config/sway
     # sudo commands {{{
         sudo ln -s ~/.config/dots/bin/googler /bin/googler
         sudo ls -s ~/.config/dots/scripts/scan /bin/scan
