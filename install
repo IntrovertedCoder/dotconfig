@@ -111,6 +111,8 @@ fi
     ln -s ~/.config/dots/alacritty ~/.config/alacritty
     rm ~/.config/sway
     ln -s ~/.config/dots/sway ~/.config/sway
+    rm ~/.config/ranger
+    ln -s ~/.config/dots/ranger ~/.config/ranger
     # sudo commands {{{
         sudo ln -s ~/.config/dots/bin/googler /bin/googler
         sudo ls -s ~/.config/dots/scripts/scan /bin/scan
