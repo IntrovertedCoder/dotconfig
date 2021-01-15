@@ -82,6 +82,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # Htop
     bindsym $mod+F1 exec alacritty -e $file
 
+    # ssh-agent term
+    bindsym $mod+F5 exec ssh-agent alacritty
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
