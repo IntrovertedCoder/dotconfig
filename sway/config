@@ -20,7 +20,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 # Your prefered file manager
-set $file thunar
+set $file ranger
 
 ### Output configuration
 #
@@ -80,7 +80,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym Print exec grim -g "$(slurp)" -t png - | wl-copy -t image/png
 
     # Htop
-    bindsym $mod+F1 exec $file
+    bindsym $mod+F1 exec alacritty -e $file
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
