@@ -34,6 +34,10 @@ cpuTemp=$(sensors | grep 'Tdie' | awk '{print substr($2,2,6)}')
 gpuTemp=$(sensors | grep 'edge' | awk '{print substr($2,2,6)}')
 
 cpu_usage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
+# Brightness
+brightness=$(cat /sys/class/backlight/amdgpu_bl0/brightness)
 
 echo "Uptime: $uptime_formatted | Battery: $battery_status$bat_state | $batLeft | CPU: $cpu_usage $cpuTemp | GPU: $gpuTemp | Date: $date_formatted"
+# Volume
+volume=$(amixer sget Master |awk -F"[][]" '/Left:/ { print $2 }')
 
