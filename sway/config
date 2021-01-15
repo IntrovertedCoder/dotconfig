@@ -79,7 +79,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # Screenshots
     bindsym Print exec grim -g "$(slurp)" -t png - | wl-copy -t image/png
 
-    # Htop
+    # File manager
     bindsym $mod+F1 exec alacritty -e $file
 
     # ssh-agent term
