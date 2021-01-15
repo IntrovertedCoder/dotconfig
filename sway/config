@@ -88,6 +88,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # Htop term
     bindsym $mod+F2 exec alacritty -t htop -e htop
 
+    # Brightness control
+    bindsym $mod+F12 exec /home/arik/.config/sway/brightness -u
+    bindsym $mod+F11 exec /home/arik/.config/sway/brightness -d
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
