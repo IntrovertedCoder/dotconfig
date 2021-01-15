@@ -29,11 +29,11 @@ fi
 
 # CPU Temp
 cpuTemp=$(sensors | grep 'Tdie' | awk '{print substr($2,2,6)}')
+cpu_usage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
 
 # GPU Temp
 gpuTemp=$(sensors | grep 'edge' | awk '{print substr($2,2,6)}')
 
-cpu_usage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
 # Brightness
 brightness=$(cat /sys/class/backlight/amdgpu_bl0/brightness)
 
