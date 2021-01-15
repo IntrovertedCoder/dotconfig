@@ -12,11 +12,11 @@ date_formatted=$(date "+%F %H:%M")
 
 # Returns the battery status: "Full", "Discharging", or "Charging".
 battery_status=$(upower -i $(upower -e | grep 'BAT') | grep percentage | awk '{print $2}')
-if upower -i $(upower -e | grep 'BAT') | grep state | grep discharging > /dev/null; then
-    bat_state='D'
-else
-    bat_state='C'
-fi
+# if upower -i $(upower -e | grep 'BAT') | grep state | grep discharging > /dev/null; then
+    # bat_state='D'
+# else
+    # bat_state='C'
+# fi
 
 # ttk/ttc
 if upower -i $(upower -e | grep "BAT") | grep 'time to full' > /dev/null; then
@@ -41,3 +41,4 @@ brightness=$(cat /sys/class/backlight/amdgpu_bl0/brightness)
 volume=$(amixer sget Master |awk -F"[][]" '/Left:/ { print $2 }')
 
 echo "Uptime: $uptime_formatted | Brightness: $brightness | Volume: $volume | Battery: $battery_status $batLeft | CPU: $cpu_usage $cpuTemp | GPU: $gpuTemp | Date: $date_formatted"
+
