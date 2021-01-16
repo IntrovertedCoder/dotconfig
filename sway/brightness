@@ -1,6 +1,5 @@
 #! /bin/bash
 
-
 while getopts "ud" opt; do
     case "$opt" in
     u)
