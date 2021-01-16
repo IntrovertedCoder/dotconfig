@@ -5,6 +5,8 @@
 # Bat file loc
 batFile="/org/freedesktop/UPower/devices/battery_BAT1"
 
+# Interface for wifi
+interface="wlp2s0"
 
 # Produces "21 days", for example
 uptime_formatted=$(uptime | cut -d ',' -f1  | cut -d ' ' -f4,5)
@@ -44,7 +46,7 @@ brightness=$(cat /sys/class/backlight/amdgpu_bl0/brightness)
 volume=$(amixer sget Master |awk -F"[][]" '/Left:/ { print $2 }')
 
 # Wifi network
-wifi=$(iw dev wlp2s0 info | grep ssid | awk '{print $2}')
+wifi=$(iw dev $interface info | grep ssid | awk '{print $2}')
 # Compare string to home network (unicode chars suck)
 if [ "$wifi" = "\xc2\xaf\x5c(\xe3\x83\x84)/\xc2\xaf" ]; then
     wifi='Home'
