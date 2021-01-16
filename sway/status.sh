@@ -2,6 +2,9 @@
 # You should see changes to the status bar after saving this script.
 # If not, do "killall swaybar" and $mod+Shift+c to reload the configuration.
 
+# Bat file loc
+batFile="/org/freedesktop/UPower/devices/battery_BAT1"
+
 
 # Produces "21 days", for example
 uptime_formatted=$(uptime | cut -d ',' -f1  | cut -d ' ' -f4,5)
@@ -11,7 +14,7 @@ uptime_formatted=$(uptime | cut -d ',' -f1  | cut -d ' ' -f4,5)
 date_formatted=$(date "+%F %H:%M")
 
 # Returns the battery status: "Full", "Discharging", or "Charging".
-battery_status=$(upower -i $(upower -e | grep 'BAT') | grep percentage | awk '{print $2}')
+battery_status=$(upower -i $batFile | grep percentage | awk '{print $2}')
 # if upower -i $(upower -e | grep 'BAT') | grep state | grep discharging > /dev/null; then
     # bat_state='D'
 # else
@@ -19,11 +22,11 @@ battery_status=$(upower -i $(upower -e | grep 'BAT') | grep percentage | awk '{p
 # fi
 
 # ttk/ttc
-if upower -i $(upower -e | grep "BAT") | grep 'time to full' > /dev/null; then
-    batTTC=$(upower -i $(upower -e | grep "BAT") | grep 'time to full' | awk '{print $4 substr($5,0,1)}')
+if upower -i $batFile | grep 'time to full' > /dev/null; then
+    batTTC=$(upower -i $batFile | grep 'time to full' | awk '{print $4 substr($5,0,1)}')
     batLeft="TTC: ${batTTC}"
-elif upower -i $(upower -e | grep "BAT") | grep 'time to empty' > /dev/null; then
-    batTTE=$(upower -i $(upower -e | grep "BAT") | grep 'time to empty' | awk '{print $4 substr($5,0,1)}')
+elif upower -i $batFile | grep 'time to empty' > /dev/null; then
+    batTTE=$(upower -i $batFile | grep 'time to empty' | awk '{print $4 substr($5,0,1)}')
     batLeft="TTE: ${batTTE}"
 fi
 
