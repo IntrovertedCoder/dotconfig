@@ -43,5 +43,12 @@ brightness=$(cat /sys/class/backlight/amdgpu_bl0/brightness)
 # Volume
 volume=$(amixer sget Master |awk -F"[][]" '/Left:/ { print $2 }')
 
-echo "Uptime: $uptime_formatted | Brightness: $brightness | Volume: $volume | Battery: $battery_status $batLeft | CPU: $cpu_usage $cpuTemp | GPU: $gpuTemp | Date: $date_formatted"
+# Wifi network
+wifi=$(iw dev wlp2s0 info | grep ssid | awk '{print $2}')
+# Compare string to home network (unicode chars suck)
+if [ "$wifi" = "\xc2\xaf\x5c(\xe3\x83\x84)/\xc2\xaf" ]; then
+    wifi='Home'
+fi
+
+echo "Uptime: $uptime_formatted | Brightness: $brightness | Volume: $volume | Wifi: $wifi | Battery: $battery_status $batLeft | CPU: $cpu_usage $cpuTemp | GPU: $gpuTemp | Date: $date_formatted"
 
