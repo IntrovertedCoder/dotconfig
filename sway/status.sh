@@ -1,3 +1,4 @@
+#! /bin/bash
 # The Sway configuration file in ~/.config/sway/config calls this script.
 # You should see changes to the status bar after saving this script.
 # If not, do "killall swaybar" and $mod+Shift+c to reload the configuration.
@@ -8,21 +9,15 @@ batFile="/org/freedesktop/UPower/devices/battery_BAT1"
 # Interface for wifi
 interface="wlp2s0"
 
+
 # Produces "21 days", for example
 uptime_formatted=$(uptime | cut -d ',' -f1  | cut -d ' ' -f4,5)
 
-# The abbreviated weekday (e.g., "Sat"), followed by the ISO-formatted date
-# like 2018-10-06 and the time (e.g., 14:01)
+# Date
 date_formatted=$(date "+%F %H:%M")
 
 # Returns the battery status: "Full", "Discharging", or "Charging".
 battery_status=$(upower -i $batFile | grep percentage | awk '{print $2}')
-# if upower -i $(upower -e | grep 'BAT') | grep state | grep discharging > /dev/null; then
-    # bat_state='D'
-# else
-    # bat_state='C'
-# fi
-
 # ttk/ttc
 if upower -i $batFile | grep 'time to full' > /dev/null; then
     batTTC=$(upower -i $batFile | grep 'time to full' | awk '{print $4 substr($5,0,1)}')
@@ -53,5 +48,5 @@ if [ "$wifi" = "\xc2\xaf\x5c(\xe3\x83\x84)/\xc2\xaf" ]; then
     wifi='Home'
 fi
 
-echo "Uptime: $uptime_formatted | Brightness: $brightness | Volume: $volume | Wifi: $wifi | Battery: $battery_status $batLeft | CPU: $cpu_usage $cpuTemp | GPU: $gpuTemp | Date: $date_formatted"
+echo "CPU: $cpu_usage $cpuTemp | GPU: $gpuTemp | Brightness: $brightness | Volume: $volume | Battery: $battery_status $batLeft | Wifi: $wifi | Uptime: $uptime_formatted | Date: $date_formatted"
 
