@@ -34,7 +34,8 @@ fi
 
 # CPU Temp
 cpuTemp=$(sensors | grep 'Tdie' | awk '{print substr($2,2,6)}')
-cpu_usage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
+# cpu_usage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print substr(usage,1,2) "%"}')
+cpu_usage=$(top -bn 2 -d 0.01 | grep '^%Cpu' | tail -n 1 | gawk '{print $2+$4+$6 "%"}')
 
 # GPU Temp
 gpuTemp=$(sensors | grep 'edge' | awk '{print substr($2,2,6)}')
