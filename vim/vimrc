@@ -289,5 +289,37 @@ nnoremap <leader>a a <ESC>r
     endfunction
 " }}}
 
+" TODO text highlight {{{
+    highlight 1 ctermbg=9 ctermfg=black
+    call matchadd("1", "{1}")
+
+    highlight 2 ctermbg=202 ctermfg=black
+    call matchadd("2", "{2}")
+
+    highlight 3 ctermbg=208 ctermfg=black
+    call matchadd("3", "{3}")
+
+    highlight 4 ctermbg=11 ctermfg=black
+    call matchadd ("4", "{4}")
+
+    highlight 5 ctermbg=118 ctermfg=black
+    call matchadd ("5", "{5}")
+
+    highlight 6 ctermbg=10 ctermfg=black
+    call matchadd("6", "{6}")
+
+    highlight 7 ctermbg=47 ctermfg=black
+    call matchadd("7", "{7}")
+
+    highlight 8 ctermbg=45 ctermfg=black
+    call matchadd("8", "{8}")
+
+    highlight 9 ctermbg=27 ctermfg=black
+    call matchadd("9", "{9}")
+
+    highlight 10 ctermbg=4 ctermfg=220
+    call matchadd("10", "{10}")
+" }}}
+
 nnoremap <F12> :source ~/.vimrc<CR>
 nnoremap <F11> :call Define()<CR>
