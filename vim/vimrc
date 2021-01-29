@@ -152,7 +152,7 @@ nnoremap <leader>a a <ESC>r
             au BufEnter *.py36 map <F7> <esc>:w\|!python3.6 "%"<CR>
             au BufEnter *.py35 map <F7> <esc>:w\|!python3.5 "%"<CR>
             " Default python editor
-            au BufEnter *.py map <F7> <esc>:w\|!python3.8.8 "%"<CR>
+            au BufEnter *.py map <F7> <esc>:w\|!python3.8 "%"<CR>
         augroup END
     " }}}
     " Detecting filetypes based off ext {{{
