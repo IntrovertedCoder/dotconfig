@@ -12,6 +12,12 @@ function fish_greeting
     else
         ssh-agent /usr/bin/fish
     end
+
+    # Pull updated dot config files from github
+    set cwd $PWD
+    cd ~/.config/dots > /dev/null
+    git pull https://github.com/IntrovertedCoder/dotconfig --quiet&
+    cd $cwd > /dev/null
 end
 
 # Custom Aliases
