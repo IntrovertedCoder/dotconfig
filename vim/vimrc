@@ -292,33 +292,43 @@ nnoremap <leader>a a <ESC>r
 " TODO text highlight {{{
     highlight 1 ctermbg=9 ctermfg=black
     call matchadd("1", "{1}")
+    nnoremap <leader>1 i{1} <ESC>
 
     highlight 2 ctermbg=202 ctermfg=black
     call matchadd("2", "{2}")
+    nnoremap <leader>2 i{2} <ESC>
 
     highlight 3 ctermbg=208 ctermfg=black
     call matchadd("3", "{3}")
+    nnoremap <leader>3 i{3} <ESC>
 
     highlight 4 ctermbg=11 ctermfg=black
     call matchadd ("4", "{4}")
+    nnoremap <leader>4 i{4} <ESC>
 
     highlight 5 ctermbg=118 ctermfg=black
     call matchadd ("5", "{5}")
+    nnoremap <leader>5 i{5} <ESC>
 
     highlight 6 ctermbg=10 ctermfg=black
     call matchadd("6", "{6}")
+    nnoremap <leader>6 i{6} <ESC>
 
     highlight 7 ctermbg=47 ctermfg=black
     call matchadd("7", "{7}")
+    nnoremap <leader>7 i{7} <ESC>
 
     highlight 8 ctermbg=45 ctermfg=black
     call matchadd("8", "{8}")
+    nnoremap <leader>8 i{8} <ESC>
 
     highlight 9 ctermbg=27 ctermfg=black
     call matchadd("9", "{9}")
+    nnoremap <leader>9 i{9} <ESC>
 
     highlight 10 ctermbg=4 ctermfg=220
     call matchadd("10", "{10}")
+    nnoremap <leader>0 i{10} <ESC>
 " }}}
 
 nnoremap <F12> :source ~/.vimrc<CR>
