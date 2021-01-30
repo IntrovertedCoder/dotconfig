@@ -8,7 +8,7 @@ function fish_greeting
     # Start ssh-agent on startup
     # Note this doesn't add identity files
     if ps -p $SSH_AGENT_PID > /dev/null
-        echo "started"
+        set sshagent "SET"
     else
         ssh-agent /usr/bin/fish
     end
