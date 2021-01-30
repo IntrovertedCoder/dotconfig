@@ -4,6 +4,14 @@ function fish_greeting
     else  # If neither then clear
         clear
     end
+
+    # Start ssh-agent on startup
+    # Note this doesn't add identity files
+    if ps -p $SSH_AGENT_PID > /dev/null
+        echo "started"
+    else
+        ssh-agent /usr/bin/fish
+    end
 end
 
 # Custom Aliases
