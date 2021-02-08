@@ -161,6 +161,8 @@ nnoremap <leader>a a <ESC>r
             " Default python editor
             au BufEnter *.py map <F7> <esc>:w\|!python3.8 "%"<CR>
         augroup END
+        " Added space+F7 to open a python idle
+        nnoremap <silent><leader><F7> :!python3<CR>
     " }}}
     " Detecting filetypes based off ext {{{
         augroup filetypePython
