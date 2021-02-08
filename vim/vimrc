@@ -64,6 +64,8 @@ map <silent><leader><F2> :!deadbeef-vs --nowplaying "\%a - \%t"<CR>
 "File explorer
 " Space+e
 nnoremap <silent><leader>e :Lex!<CR> :vertical resize 40<CR>
+" Open ranger with space+shift+e
+nnoremap <silent><leader>E :!ranger<CR>
 
 " Enabling spellcheck
 " Space+c
