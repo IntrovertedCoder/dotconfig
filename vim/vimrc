@@ -69,7 +69,7 @@ nnoremap <silent><leader>E :!ranger<CR>
 
 " Enabling spellcheck
 " Space+c
-nnoremap <silent><leader>c :set spell<CR>
+nnoremap <silent><leader>c :set spell!<CR>
 
 " Yank line
 " Space+y
