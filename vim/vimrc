@@ -75,6 +75,8 @@ nnoremap <silent><leader>c :set spell!<CR>
 " Space+y
 nnoremap <silent><leader>y ^<C-v>$y
 
+" Toggle capitalization under cursor
+nnoremap <silent><leader>U v~<esc>
 
 " Quickly insert an empty new line without entering insert mode
 " Space+o or space+O
