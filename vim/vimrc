@@ -336,8 +336,8 @@ nnoremap <leader>a a <ESC>r
     nnoremap <leader>9 i{9} <ESC>
 
     highlight 10 ctermbg=4 ctermfg=220
-    call matchadd("10", "{10}")
-    nnoremap <leader>0 i{10} <ESC>
+    call matchadd("0", "{0}")
+    nnoremap <leader>0 i{0} <ESC>
 " }}}
 
 nnoremap <F12> :source ~/.vimrc<CR>
