@@ -312,11 +312,11 @@ nnoremap <leader>a a <ESC>r
     nnoremap <leader>3 i{3} <ESC>
 
     highlight 4 ctermbg=11 ctermfg=black
-    call matchadd ("4", "{4}")
+    call matchadd("4", "{4}")
     nnoremap <leader>4 i{4} <ESC>
 
     highlight 5 ctermbg=118 ctermfg=black
-    call matchadd ("5", "{5}")
+    call matchadd("5", "{5}")
     nnoremap <leader>5 i{5} <ESC>
 
     highlight 6 ctermbg=10 ctermfg=black
