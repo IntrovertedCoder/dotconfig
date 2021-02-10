@@ -337,7 +337,7 @@ nnoremap <leader>a a <ESC>r
     call matchadd("9", "{9}")
     nnoremap <leader>9 i{9} <ESC>
 
-    highlight 10 ctermbg=4 ctermfg=220
+    highlight 0 ctermbg=4 ctermfg=220
     call matchadd("0", "{0}")
     nnoremap <leader>0 i{0} <ESC>
 " }}}
