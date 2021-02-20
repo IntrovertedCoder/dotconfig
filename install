@@ -97,21 +97,21 @@ fi
 # }}}
 
 # Copying config files {{{
-    rm ~/.config/fish
+    rm ~/.config/fish -r
     ln -s ~/.config/dots/fish ~/.config/fish
-    rm ~/.vim
+    rm ~/.vim -r
     ln -s ~/.config/dots/vim/vim ~/.vim
-    rm ~/.vimrc
+    rm ~/.vimrc -r
     ln -s ~/.config/dots/vim/vimrc ~/.vimrc
-    rm ~/.tmux.conf
+    rm ~/.tmux.conf -r
     ln -s ~/.config/dots/tmux/.tmux.conf ~/.tmux.conf
-    rm ~/.config/fish
+    rm ~/.config/fish -r
     ln -s ~/.config/dots/fish ~/.config/fish
-    rm ~/.config/alacritty
+    rm ~/.config/alacritty -r
     ln -s ~/.config/dots/alacritty ~/.config/alacritty
-    rm ~/.config/sway
+    rm ~/.config/sway -r
     ln -s ~/.config/dots/sway ~/.config/sway
-    rm ~/.config/ranger
+    rm ~/.config/ranger -r
     ln -s ~/.config/dots/ranger ~/.config
     rm ~/.config/htop -r
     ln -s ~/.config/dots/htop ~/.config/htop
