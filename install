@@ -97,6 +97,7 @@ fi
 # }}}
 
 # Copying config files {{{
+    center "CONFIGS"
     rm ~/.config/fish -r
     ln -s ~/.config/dots/fish ~/.config/fish
     rm ~/.vim -r
