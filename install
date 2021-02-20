@@ -113,6 +113,8 @@ fi
     ln -s ~/.config/dots/sway ~/.config/sway
     rm ~/.config/ranger
     ln -s ~/.config/dots/ranger ~/.config
+    rm ~/.config/htop -r
+    ln -s ~/.config/dots/htop ~/.config/htop
     # sudo commands {{{
         sudo ln -s ~/.config/dots/bin/googler /bin/googler
         sudo ls -s ~/.config/dots/scripts/scan /bin/scan
