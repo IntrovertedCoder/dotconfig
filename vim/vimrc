@@ -340,6 +340,22 @@ nnoremap <leader>a a <ESC>r
     highlight 0 ctermbg=4 ctermfg=220
     call matchadd("0", "{0}")
     nnoremap <leader>0 i{0} <ESC>
+    " Grep keybind {{{
+        " Search for all
+        nnoremap <leader>` /{[0-9]}<CR>
+        " Specific keybinds {{{
+            nnoremap <leader>! /{1}<CR>
+            nnoremap <leader>@ /{2}<CR>
+            nnoremap <leader># /{3}<CR>
+            nnoremap <leader>$ /{4}<CR>
+            nnoremap <leader>% /{5}<CR>
+            nnoremap <leader>^ /{6}<CR>
+            nnoremap <leader>& /{7}<CR>
+            nnoremap <leader>* /{8}<CR>
+            nnoremap <leader>( /{9}<CR>
+            nnoremap <leader>) /{0}<CR>
+        " }}}
+    " }}}
 " }}}
 
 nnoremap <F12> :source ~/.vimrc<CR>
