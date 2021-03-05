@@ -95,6 +95,10 @@ nmap <leader>r :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 " Space+z
 nnoremap <leader>z 80\|F<space>xi<CR><esc>
 
+" Toggle paste
+" Space+p
+nnoremap <silent><leader>p :set paste!<CR>
+
 " Insert chat at cursor pos {{{
 nnoremap <leader>i i <ESC>r
 nnoremap <leader>a a <ESC>r
