@@ -44,6 +44,9 @@ end
 function l
     ls -CF
 end
+function ls
+    command ls -CFt  --color=auto $argv
+end
 function mkcd
     mkdir -- $argv
     if [ $status = '0' ]
