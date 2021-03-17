@@ -16,6 +16,15 @@ function fish_greeting
     # Set EDITOR/VISUAL to vim
     set -Ux EDITOR vim
     set -Ux VISUAL vim
+
+    # Custom keybinds {{{
+        # Bind F2 to insert sudo to beginning of line
+        bind -k f2 __fish_prepend_sudo
+
+        # Bind F3 to open command in EDITOR/VISUAL
+        bind -k f3 edit_command_buffer
+    # }}}
+
     # Pull updated dot config files from github
     set cwd $PWD
     cd ~/.config/dots > /dev/null
