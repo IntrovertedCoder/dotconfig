@@ -13,6 +13,9 @@ function fish_greeting
         ssh-agent /usr/bin/fish
     end
 
+    # Set EDITOR/VISUAL to vim
+    set -Ux EDITOR vim
+    set -Ux VISUAL vim
     # Pull updated dot config files from github
     set cwd $PWD
     cd ~/.config/dots > /dev/null
