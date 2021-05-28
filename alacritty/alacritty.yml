@@ -47,3 +47,7 @@ colors:
     cyan:    '#5c8482'
     white:   '#828282'
 
+fonts:
+  normal:
+    family: Hack Regular Nerd Font Complete Mono
+    style: Regular
