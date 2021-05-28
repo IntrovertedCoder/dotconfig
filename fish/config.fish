@@ -45,19 +45,19 @@ function update
     sudo apt-get autoremove
 end
 function ll
-    ls -alFh
-end
-function lt
-    ls -hs1Sc
-end
-function la
-    ls -A
-end
-function l
-    ls -CF
+    # a: all files/dirs except . and ..
+    # l: show each file/dir as line and show more info
+    # h: Adds a header to each row
+    # g: shows groups the file belongs to (Yellow if user is in group and white if not)
+    # --icons: show file icon (requires nerdfont)
+    # --git: show git status
+    # --octal-permissions: show permissions (same as chmod)
+    exa -alhg --icons --git --octal-permissions $argv
 end
 function ls
-    command ls -CFt  --color=auto $argv
+    # a: all files/dirs except . and ..
+    # x: sort horizontally instead of vertically
+    exa -ax --icons --git $argv
 end
 function mkcd
     mkdir -- $argv
@@ -69,7 +69,7 @@ function cd
     set cwd $PWD
     builtin cd $argv
     if [ $PWD != $cwd ]
-        ls -Ahs
+        exa -ax --icons --git
     end
 end
 function e
