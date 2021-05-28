@@ -117,7 +117,7 @@ fi
     rm ~/.config/htop -r
     ln -s ~/.config/dots/htop ~/.config/htop
     rm /usr/local/bin/exa
-    sudo ls -n ~/.config/dots/scripts/exa /usr/local/bin/exa
+    sudo ls -n ~/.config/dots/scripts/exa /usr/local/bin
     # sudo commands {{{
         sudo ln -s ~/.config/dots/bin/googler /bin/googler
         sudo ls -s ~/.config/dots/scripts/scan /bin/scan
