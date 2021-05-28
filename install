@@ -42,6 +42,8 @@ if [ $? -eq 0 ]; then
     center "cron"
     sudo apt install cron -y
     center "lazygit"
+    sudo add-apt-repository ppa:lazygit-team/release
+    sudo apt-get update
     sudo apt install lazygit -y
     center "youtube-dl"
     sudo apt install youtube-dl -y
