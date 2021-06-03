@@ -66,7 +66,8 @@ function tree
     # level: how many folders to go into
     # F: show if the file is executable with a * at the end of the file
     # I: folders to ignore
-    exa -a --icons --tree --level=3 -F -I='.git'
+    # color: show color in less
+    exa -a --icons --tree --level=3 -F -I='.git' --color=always $argv | less -r +G
 end
 function mkcd
     mkdir -- $argv
