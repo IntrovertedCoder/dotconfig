@@ -21,8 +21,6 @@ if [ $? -eq 0 ]; then
     sudo apt install vim -y
     center "tmux"
     sudo apt install tmux -y
-    center "tree"
-    sudo apt install tree -y
     center "wget"
     sudo apt install wget -y
     center "fish"
@@ -54,7 +52,6 @@ fi
 # Tell if rpm or redhat {{{
 cd /etc/rpm 2> /dev/null
 if [ $? -eq 0 ]; then
-    sudo dnf install tree
     sudo dnf install wget
     sudo dnf install github
     # sudo dnf install
@@ -70,8 +67,6 @@ if [ $? -eq 0 ]; then
     sudo pacman -Syu vim
     center "tmux"
     sudo pacman -Sy tmux
-    center "tree"
-    sudo pacman -Sy tree
     center "wget"
     sudo pacman -Sy wget
     center "fish"

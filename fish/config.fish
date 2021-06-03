@@ -59,6 +59,15 @@ function ls
     # x: sort horizontally instead of vertically
     exa -ax --icons --git $argv
 end
+function tree
+    # a: all files/dirs except . and ..
+    # icons: show icons from NerdFonts
+    # tree: same as tree command
+    # level: how many folders to go into
+    # F: show if the file is executable with a * at the end of the file
+    # I: folders to ignore
+    exa -a --icons --tree --level=3 -F -I='.git'
+end
 function mkcd
     mkdir -- $argv
     if [ $status = '0' ]
