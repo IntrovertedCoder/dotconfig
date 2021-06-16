@@ -105,6 +105,17 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
     # Htop term
     bindsym $mod+F2 exec alacritty -t htop -e htop
 
+    # Rotate Display
+    bindsym $mod+F10 mode "rotate"
+    mode "rotate" {
+        set $touchscreen "1386:20932:Wacom_HID_51C4_Finger"
+        bindsym $mod+$left output - transform 270, input $touchscreen events enabled, mode "default"
+        bindsym $mod+$right output - transform 90, input $touchscreen events enabled, mode "default"
+        bindsym $mod+$up output - transform 0, input $touchscreen events disabled, mode "default"
+        bindsym $mod+$down output - transform 180, input $touchscreen events enabled, mode "default"
+        bindsym $mod+Return mode "default"
+    }
+
     # Brightness control
     bindsym $mod+F12 exec /home/arik/.config/sway/brightness -u
     bindsym $mod+F11 exec /home/arik/.config/sway/brightness -d
