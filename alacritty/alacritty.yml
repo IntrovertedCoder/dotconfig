@@ -1,7 +1,7 @@
 colors:
   # Default colors
   primary:
-    background: '#000000'
+    background: '#080606'
     foreground: '#d6d6d6'
 
     dim_foreground:    '#dbdbdb'
@@ -16,7 +16,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#000000'
+    black:   '#080606'
     red:     '#bc5653'
     green:   '#5fd7ff'
     yellow:  '#ebc17a'
