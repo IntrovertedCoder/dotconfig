@@ -70,28 +70,28 @@ endfunction
 " Palettes
 " --------
 
-let s:white       = { "gui": "#E8E8E3", "cterm": "252" }
-let s:white2      = { "gui": "#d8d8d3", "cterm": "250" }
-let s:black       = { "gui": "#272822", "cterm": "0" }
-let s:lightblack  = { "gui": "#2D2E27", "cterm": "0" }
-let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }
+let s:white       = { "gui": "#EFEFEF", "cterm": "255" }
+let s:white2      = { "gui": "#DADADA", "cterm": "253" }
+let s:black       = { "gui": "#080606", "cterm": "0" }
+let s:lightblack  = { "gui": "#080606", "cterm": "0" }
+let s:lightblack2 = { "gui": "#262626", "cterm": "235" }
 let s:lightblack3 = { "gui": "#3f4145", "cterm": "237" }
-let s:darkblack   = { "gui": "#211F1C", "cterm": "233" }
-let s:grey        = { "gui": "#8F908A", "cterm": "243" }
-let s:lightgrey   = { "gui": "#575b61", "cterm": "237" }
-let s:darkgrey    = { "gui": "#64645e", "cterm": "239" }
-let s:warmgrey    = { "gui": "#75715E", "cterm": "59" }
-let s:NonText     = { "gui": "#75715E", "cterm": "234" }
+let s:darkblack   = { "gui": "#100F0F", "cterm": "0" }
+let s:grey        = { "gui": "#626262", "cterm": "241" }
+let s:lightgrey   = { "gui": "#949494", "cterm": "246" }
+let s:darkgrey    = { "gui": "#444444", "cterm": "238" }
+let s:warmgrey    = { "gui": "#737272", "cterm": "59" }
+let s:NonText     = { "gui": "#201F1F", "cterm": "233" }
 
-let s:pink        = { "gui": "#F92772", "cterm": "197" }
-let s:green       = { "gui": "#A6E22D", "cterm": "148" }
-let s:aqua        = { "gui": "#66d9ef", "cterm": "81" }
-let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }
-let s:orange      = { "gui": "#FD9720", "cterm": "208" }
-let s:purple      = { "gui": "#ae81ff", "cterm": "141" }
-let s:red         = { "gui": "#e73c50", "cterm": "196" }
+let s:pink        = { "gui": "#F93535", "cterm": "203" }
+let s:green       = { "gui": "#47D620", "cterm": "76" }
+let s:aqua        = { "gui": "#41D0FF", "cterm": "81" }
+let s:yellow      = { "gui": "#FDD228", "cterm": "220" }
+let s:orange      = { "gui": "#FC9E2C", "cterm": "214" }
+let s:purple      = { "gui": "#652EFB", "cterm": "105" }
+let s:red         = { "gui": "#F93535", "cterm": "203" }
 let s:purered     = { "gui": "#ff0000", "cterm": "52" }
-let s:darkred     = { "gui": "#5f0000", "cterm": "52" }
+let s:darkred     = { "gui": "#BC0606", "cterm": "124" }
 
 let s:addfg       = { "gui": "#d7ffaf", "cterm": "193" }
 let s:addbg       = { "gui": "#5f875f", "cterm": "65" }
@@ -99,12 +99,12 @@ let s:delbg       = { "gui": "#f75f5f", "cterm": "167" }
 let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
 let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
 
-let s:cyan        = { "gui": "#A1EFE4" }
-let s:br_green    = { "gui": "#9EC400" }
-let s:br_yellow   = { "gui": "#E7C547" }
-let s:br_blue     = { "gui": "#7AA6DA" }
-let s:br_purple   = { "gui": "#B77EE0" }
-let s:br_cyan     = { "gui": "#54CED6" }
+let s:cyan        = { "gui": "#5FD7FF" }
+let s:br_green    = { "gui": "#70AF5F" }
+let s:br_yellow   = { "gui": "#FAD749" }
+let s:br_blue     = { "gui": "#2B50AA" }
+let s:br_purple   = { "gui": "#7D51F5" }
+let s:br_cyan     = { "gui": "#5FD7FF" }
 let s:br_white    = { "gui": "#FFFFFF" }
 
 " Highlighting

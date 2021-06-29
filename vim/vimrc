@@ -192,6 +192,7 @@ nnoremap <leader>a a <ESC>r
 
 " Theming {{{
     " Colorscheme {{{
+        set termguicolors
         colorscheme monokai-bold
         syntax on
     " }}}
@@ -211,6 +212,7 @@ nnoremap <leader>a a <ESC>r
 " Color column {{{
     set colorcolumn=80
     highlight ColorColumn ctermbg=232
+    highlight ColorColumn guibg=#100F0F
 " }}}
 " }}}
 
@@ -306,42 +308,52 @@ nnoremap <leader>a a <ESC>r
 
 " TODO text highlight {{{
     highlight 1 ctermbg=9 ctermfg=black
+    highlight 1 guibg=#F25757 guifg=#0DA8A8
     call matchadd("1", "{1}")
     nnoremap <leader>1 i{1} <ESC>
 
     highlight 2 ctermbg=202 ctermfg=black
+    highlight 2 guibg=#E2656A guifg=#1D9A95
     call matchadd("2", "{2}")
     nnoremap <leader>2 i{2} <ESC>
 
     highlight 3 ctermbg=208 ctermfg=black
+    highlight 3 guibg=#D1737C guifg=#2E8C83
     call matchadd("3", "{3}")
     nnoremap <leader>3 i{3} <ESC>
 
     highlight 4 ctermbg=11 ctermfg=black
+    highlight 4 guibg=#C1828F guifg=#3E7D70
     call matchadd("4", "{4}")
     nnoremap <leader>4 i{4} <ESC>
 
     highlight 5 ctermbg=118 ctermfg=black
+    highlight 5 guibg=#B190A2 guifg=#4E6F5D
     call matchadd("5", "{5}")
     nnoremap <leader>5 i{5} <ESC>
 
     highlight 6 ctermbg=10 ctermfg=black
+    highlight 6 guibg=#A09EB4 guifg=#5F614B
     call matchadd("6", "{6}")
     nnoremap <leader>6 i{6} <ESC>
 
     highlight 7 ctermbg=47 ctermfg=black
+    highlight 7 guibg=#90ACC7 guifg=#6F5338
     call matchadd("7", "{7}")
     nnoremap <leader>7 i{7} <ESC>
 
     highlight 8 ctermbg=45 ctermfg=black
+    highlight 8 guibg=#80BBDA guifg=#7F4425
     call matchadd("8", "{8}")
     nnoremap <leader>8 i{8} <ESC>
 
     highlight 9 ctermbg=27 ctermfg=black
+    highlight 9 guibg=#6FC9EC guifg=#903613
     call matchadd("9", "{9}")
     nnoremap <leader>9 i{9} <ESC>
 
     highlight 0 ctermbg=4 ctermfg=220
+    highlight 0 guibg=#5FD7FF guifg=#A02800
     call matchadd("0", "{0}")
     nnoremap <leader>0 i{0} <ESC>
     " Grep keybind {{{
