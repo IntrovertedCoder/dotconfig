@@ -170,6 +170,17 @@ nnoremap <leader>a a <ESC>r
         " Added space+F7 to open a python idle
         nnoremap <silent><leader><F7> :silent !python3<CR>
     " }}}
+    " Java Compiler {{{
+        augroup javaStuff
+            func Eatchar(pat)
+                let c = nr2char(getchar(0))
+                return (c =~ a:pat) ? '' : c
+            endfunc
+            au BufEnter *.java map <F7> <esc>:w\|!java "%"<CR>
+            iabbrev <silent> print System.out.print(<c-r>=Eatchar('\m\s\<bar>/')<cr>
+            iabbrev <silent> println System.out.println(<c-r>=Eatchar('\m\s\<bar>/')<cr>
+        augroup END
+    " }}}
     " Detecting filetypes based off ext {{{
         augroup filetypePython
             au BufNewFile,BufRead *.py38 set filetype=python
