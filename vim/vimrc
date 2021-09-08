@@ -178,11 +178,13 @@ nnoremap <leader>a a <ESC>r
             au BufNewFile,BufRead *.py35 set filetype=python
         augroup END
     " }}}
+    " C {{{
+        augroup filetypeC
+            au BufEnter *.c map <F7> <esc>:w\|!c "%"<CR>
+        augroup END
+    " }}}
 " }}}
 
-" C {{{
-    au BufEnter *.c map <F7> <esc>:w\|!c "%"<CR>
-" }}}
 " }}}
 
 " Unmapping {{{
