@@ -177,8 +177,8 @@ nnoremap <leader>a a <ESC>r
                 return (c =~ a:pat) ? '' : c
             endfunc
             au BufEnter *.java map <F7> <esc>:w\|!java "%"<CR>
-            iabbrev <silent> print System.out.print(<c-r>=Eatchar('\m\s\<bar>/')<cr>
-            iabbrev <silent> println System.out.println(<c-r>=Eatchar('\m\s\<bar>/')<cr>
+            autocmd FileType java iabbrev <silent> print System.out.print(<c-r>=Eatchar('\m\s\<bar>/')<cr>
+            autocmd FileType java iabbrev <silent> println System.out.println(<c-r>=Eatchar('\m\s\<bar>/')<cr>
         augroup END
     " }}}
     " Detecting filetypes based off ext {{{
