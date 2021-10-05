@@ -32,6 +32,11 @@ function fish_greeting
     cd $cwd > /dev/null
 end
 
+# Start sway on tty2
+if test -z $DISPLAY; and test (tty) = "/dev/tty2"
+    sway
+end
+
 # Custom Aliases
 function ..
     cd ..
