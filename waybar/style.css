@@ -1,0 +1,232 @@
+* {
+    border: none;
+    border-radius: 5;
+    /* `otf-font-awesome` is required to be installed for icons */
+    /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+    font-family: 'Hack Regular Nerd Font Complete Mono', monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(08, 06, 06, 1);
+    border-bottom: 3px solid rgba(08, 06, 06, 1);
+    color: #efefef;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 0;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #080606;
+    border: none;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #efefef;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: #FA6931;
+}
+
+#workspaces button.focused {
+    background-color: #41D0FF;
+    color: #080606;
+}
+
+#workspaces button.urgent {
+    background-color: #F93535;
+    color: #EFEFEF
+}
+
+#mode {
+    background-color: #47D620;
+    color: #EFEFEF
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#window,
+
+#workspaces {
+    margin: 0 2px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: #080606;
+    color: #EFEFEF;
+}
+
+#battery {
+    background-color: #41D0FF;
+    color: #080606;
+}
+
+#battery.charging, #battery.plugged {
+    color: #efefef;
+    background-color: #47D620;
+}
+
+@keyframes blink {
+    to {
+        background-color: #efefef;
+        color: #080606;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #F93535;
+    color: #efefef;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #080606;
+}
+
+#cpu {
+    background-color: #080606;
+    color: #EFEFEF;
+}
+
+#memory {
+    background-color: #FDD228;
+    color: #080606;
+}
+
+#disk {
+    background-color: #080606;
+    color: #EFEFEF
+}
+
+#backlight {
+    background-color: #A82929;
+}
+
+#network {
+    background-color: #41D0FF;
+    color: #080606;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio {
+    background-color: #f1c40f;
+    color: #080606;
+}
+
+#pulseaudio.muted {
+    background-color: #A82929;
+    color: #2a5c45;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #f0932b;
+}
+
+#temperature.critical {
+    background-color: #F93535;
+}
+
+#tray {
+    background-color: #FDD228;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #F93535;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #080606;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#custom-spotify {
+    background: #47D623;
+    color: #080606;
+}

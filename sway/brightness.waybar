@@ -1,0 +1,16 @@
+#! /bin/bash
+
+while getopts "ud" opt; do
+    case "$opt" in
+    u)
+        te="+1"
+        ;;
+    d)
+        te="-1"
+        ;;
+    esac
+done
+
+foo=$(cat /sys/class/backlight/amdgpu_bl0/brightness | awk -v a="$te" '{print $1,a}' | bc -l)
+echo $foo
+echo $foo > /sys/class/backlight/amdgpu_bl0/brightness

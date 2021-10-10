@@ -81,6 +81,7 @@ if [ $? -eq 0 ]; then
     sudo pacman -Sy yay
     center "lazygit (AUR)"
     echo 1 | yay lazygit  # Untested so far
+    echo 1 | yay -S waybar
     # sudo pacman -Sy
 fi
 # }}}
@@ -111,6 +112,8 @@ fi
     ln -s ~/.config/dots/sway ~/.config/sway
     rm ~/.config/ranger -r
     ln -s ~/.config/dots/ranger ~/.config
+    rm ~/.config/waybar -r
+    ln -s ~/.config/dots/waybar ~/.config/waybar
     rm ~/.config/htop -r
     ln -s ~/.config/dots/htop ~/.config/htop
     rm /usr/local/bin/exa
