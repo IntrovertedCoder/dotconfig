@@ -25,7 +25,8 @@ set $file ranger
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" bg /home/arik/Pictures/Wallpapers/dark.jpg fill
+# output "*" bg /home/arik/Pictures/Wallpapers/dark.jpg fill
+output "*" bg /home/arik/Pictures/Wallpapers/blue.jpg fill
 #
 # Example configuration:
 #
