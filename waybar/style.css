@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 5;
+    border-radius: 5px;
     /* `otf-font-awesome` is required to be installed for icons */
     /* font-family: Roboto, Helvetica, Arial, sans-serif; */
     font-family: 'Hack Regular Nerd Font Complete Mono', monospace;
