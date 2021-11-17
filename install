@@ -82,6 +82,7 @@ if [ $? -eq 0 ]; then
     center "lazygit (AUR)"
     echo 1 | yay lazygit  # Untested so far
     echo 1 | yay -S waybar
+    echo 1 | yay -S btop
     # sudo pacman -Sy
 fi
 # }}}
