@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu -nb '#080606' -sf '#080606' -sb '#41D0FF' -nf '#41D0FF'  | xargs swaymsg exec --
+set $menu dmenu_path | dmenu -nb '#080606' -sf '#080606' -sb '#41D0FF' -nf '#41D0FF'  | xargs i3 exec --
 # Your prefered file manager
 set $file ranger
 
@@ -26,7 +26,7 @@ set $file ranger
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output "*" bg /home/arik/Pictures/Wallpapers/dark.jpg fill
-output "*" bg /home/arik/Pictures/Wallpapers/blue.jpg fill
+# output "*" bg /home/arik/Pictures/Wallpapers/blue.jpg fill
 #
 # Example configuration:
 #
@@ -46,33 +46,6 @@ output "*" bg /home/arik/Pictures/Wallpapers/blue.jpg fill
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
-### Input configuration
-#
-# Example configuration:
-#
-input "1739:32552:SYN3000:00_06CB:7F28_Touchpad" {
-    dwt enabled
-    tap enabled
-    natural_scroll enabled
-    middle_emulation enabled
-}
-
-
-# Disable unused devices
-# Pen?
-input "1386:20932:Wacom_HID_51C4_Pen" {
-    events enabled
-}
-# Touchscreen
-input "1386:20932:Wacom_HID_51C4_Finger" {
-    events disabled
-}
-# Camera (Not working for some reason restart maybe?)
-input "22918:8469:Integrated_Camera:_Integrated_C" {
-    events enabled
-}
-
 
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -106,17 +79,6 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
     # Htop term
     bindsym $mod+F2 exec alacritty -t btop -e btop
 
-    # Rotate Display
-    bindsym $mod+F10 mode "rotate"
-    mode "rotate" {
-        set $touchscreen "1386:20932:Wacom_HID_51C4_Finger"
-        bindsym $mod+$left output - transform 270, input $touchscreen events enabled, mode "default"
-        bindsym $mod+$right output - transform 90, input $touchscreen events enabled, mode "default"
-        bindsym $mod+$up output - transform 0, input $touchscreen events disabled, mode "default"
-        bindsym $mod+$down output - transform 180, input $touchscreen events enabled, mode "default"
-        bindsym $mod+Return mode "default"
-    }
-
     # Toggle touchscreen
     set $touchscreen "1386:20932:Wacom_HID_51C4_Finger"
     bindsym $mod+F9 input $touchscreen events toggle
@@ -137,13 +99,6 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
 
     # Keyboard audio control
     bindsym $mod+F4 exec playerctl play-pause
-
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    floating_modifier $mod normal
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -198,6 +153,18 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
     bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+    # Assigning workspaces to monitors
+    workspace 1 output DP-0
+    workspace 3 output DP-0
+    workspace 5 output DP-0
+    workspace 7 output DP-0
+    workspace 9 output DP-0
+    workspace 2 output HDMI-0
+    workspace 4 output HDMI-0
+    workspace 6 output HDMI-0
+    workspace 8 output HDMI-0
+    workspace 10 output HDMI-0
 #
 # Layout stuff:
 #
@@ -239,29 +206,7 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
 #
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    # status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-    # status_command while ~/.config/sway/status.sh; do sleep 1; done
-    swaybar_command waybar
-
-    colors {
-         background #080606
-         statusline #EFEFEF
-         separator  #666666
-
-         focused_workspace  #652EFB #652EFB #EFEFEF
-         active_workspace   #1E1C1C #1E1C1C #EFEFEF
-         inactive_workspace #1E1C1C #1E1C1C #888888
-         urgent_workspace   #2F343A #F93535 #EFEFEF
-         binding_mode       #2F343A #F93535 #EFEFEF
-       }
-    }
-}
+exec_always --no-startup-id /home/arik/.config/polybar/polybar.sh
 
 # class                 border  bground text    indicator child_border
 client.focused          #652EFB #652EFB #EFEFEF #652EFB   #285577
@@ -272,13 +217,9 @@ client.placeholder      #000000 #0C0C0C #EFEFEF #000000   #0C0C0C
 
 client.background       #EFEFEF
 
-include /etc/sway/config.d/*
 
-# Alternating layouts in golden sprial fasion
-exec_always --no-startup-id python /home/arik/.config/sway/alternating_layouts.py
 
 # Open programs in each workspace
 for_window [class="discord"] move workspace 4
 for_window [class="Spotify"] move workspace 10
-for_window [app_id="org.pwmt.zathura"] move workspace 5
 for_window [class="Gimp"] move workspace 6

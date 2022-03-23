@@ -113,6 +113,9 @@ fi
     ln -s ~/.config/dots/sway ~/.config/sway
     rm ~/.config/i3 -r
     ln -s /home/arik/.config/dots/i3/config /home/arik/.config/i3/config
+    rm ~/.config/polybar -r
+    ln -s /home/arik/.config/dots/polybar/config.ini /home/arik/.config/polybar
+    ln -s /home/arik/.config/dots/polybar/polybar.sh /home/arik/.config/polybar
     rm ~/.config/ranger -r
     ln -s ~/.config/dots/ranger ~/.config
     rm ~/.config/waybar -r
