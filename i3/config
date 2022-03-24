@@ -18,7 +18,8 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu -nb '#080606' -sf '#080606' -sb '#41D0FF' -nf '#41D0FF'  | xargs i3 exec --
+set $menu rlaunch --color0 "#080606" --color1 "#5FD7FF" --color2 "#EFEFEF" --color3 "#080606" -f "Hack Nerd Font Mono" -h 33
+
 # Your prefered file manager
 set $file ranger
 
