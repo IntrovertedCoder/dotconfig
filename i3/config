@@ -186,6 +186,9 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+    # Allow mod+drag to move floating window
+    floating_modifier $mod
 #
 # Scratchpad:
 #
