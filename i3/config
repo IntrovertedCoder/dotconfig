@@ -58,6 +58,7 @@ exec --no-startup-id feh --bg-center /home/arik/.config/wallpapers/wallpaperHori
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term --class floating
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -216,3 +217,4 @@ client.background       #EFEFEF
 # Open programs in each workspace
 for_window [class="discord"] move workspace 4
 for_window [class="Spotify"] move workspace 10
+for_window [instance="floating"] floating enabled
