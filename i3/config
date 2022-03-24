@@ -27,7 +27,7 @@ set $file ranger
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output "*" bg /home/arik/Pictures/Wallpapers/dark.jpg fill
 # output "*" bg /home/arik/Pictures/Wallpapers/blue.jpg fill
-exec --no-startup-id feh --bg-center /home/arik/.config/wallpapers/wallpaperHorizontal.png /home/arik/.config/wallpapers/wallpaperVertical.png
+exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpaperHorizontal.png /home/arik/.config/dots/wallpapers/wallpaperVertical.png
 #
 # Example configuration:
 #
