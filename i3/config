@@ -69,7 +69,9 @@ exec --no-startup-id feh --bg-center /home/arik/.config/wallpapers/wallpaperHori
     bindsym $mod+t exec firefox
 
     # Screenshots
-    bindsym Print exec grim -g "$(slurp)" -t png - | wl-copy -t image/png
+    bindsym Print exec scrot $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
+    bindsym Mod1+Print exec scrot -u $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
+    bindsym Mod1+Shift+Print exec scrot -s $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
 
     # File manager
     bindsym $mod+F1 exec alacritty -e $file
