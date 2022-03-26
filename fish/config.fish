@@ -37,6 +37,11 @@ if test -z $DISPLAY; and test (tty) = "/dev/tty2"
     sway
 end
 
+# Start startx on tty1
+if test -z $DISPLAY; and test (tty) = "/dev/tty1"
+    startx
+end
+
 # Custom Aliases
 function ..
     cd ..
