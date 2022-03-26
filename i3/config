@@ -222,3 +222,5 @@ client.background       #EFEFEF
 for_window [class="discord"] move workspace 4
 for_window [class="Spotify"] move workspace 10
 for_window [instance="floating"] floating enabled
+# Run at i3 start
+    exec xrandr --dpi 100
