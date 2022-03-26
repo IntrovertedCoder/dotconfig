@@ -224,3 +224,4 @@ for_window [class="Spotify"] move workspace 10
 for_window [instance="floating"] floating enabled
 # Run at i3 start
     exec xrandr --dpi 100
+    exec mailspring -b
