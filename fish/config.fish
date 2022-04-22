@@ -122,3 +122,9 @@ function findc
         grep $PWD ~/files | grep -i $argv
     end
 end
+
+# Lazygit/git
+function lg
+  ssh-add ~/.ssh/github
+  lazygit
+end
