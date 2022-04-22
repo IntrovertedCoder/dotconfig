@@ -32,7 +32,7 @@ let mapleader = " "
     " Inserting tab
     nnoremap <Tab> ^<S-i><Tab><Esc><Esc>l
     " Removing tab
-    nnoremap <S-Tab> ^4h4x
+    nnoremap <S-Tab> ^2h2x
 " }}}
 
 " Window Management {{{
@@ -147,8 +147,8 @@ nnoremap <leader>a a <ESC>r
 " }}}
 
 " Tabbing {{{
-    set softtabstop=4 shiftwidth=4
-    set tabstop=4
+    set softtabstop=2 shiftwidth=2
+    set tabstop=2
     set expandtab
     set autoindent
     let g:indentLine_char_list = ['|', '¦', '┆', '┊']
