@@ -1,0 +1,58 @@
+{
+    "com.github.tchar.ulauncher-albert-files": {
+        "id": "com.github.tchar.ulauncher-albert-files",
+        "url": "https://github.com/tchar/ulauncher-albert-files",
+        "updated_at": "2022-05-05T15:45:05.909024",
+        "last_commit": "38d96d9d4c44a817b55ddbb38151339dc738ec87",
+        "last_commit_time": "2021-07-09T07:55:05"
+    },
+    "com.github.carlosmape.ulauncher-calendar": {
+        "id": "com.github.carlosmape.ulauncher-calendar",
+        "url": "https://github.com/Carlosmape/ulauncher-calendar",
+        "updated_at": "2022-05-05T18:30:18.219511",
+        "last_commit": "971c8f620438f90349811fa2e554832588a21748",
+        "last_commit_time": "2022-05-02T15:36:53"
+    },
+    "com.github.tevenfeng.ulauncher-dc": {
+        "id": "com.github.tevenfeng.ulauncher-dc",
+        "url": "https://github.com/tevenfeng/ulauncher-dc",
+        "updated_at": "2022-05-05T18:31:29.271087",
+        "last_commit": "9d1cb6922a4ab61bbbcfde990a5fc3aa1f0d16f4",
+        "last_commit_time": "2022-04-23T09:41:59"
+    },
+    "com.github.dhelmr.ulauncher-tldr": {
+        "id": "com.github.dhelmr.ulauncher-tldr",
+        "url": "https://github.com/dhelmr/ulauncher-tldr",
+        "updated_at": "2022-05-05T18:33:50.281507",
+        "last_commit": "2ad5d29963db649775f68a7815af18509f4c287f",
+        "last_commit_time": "2021-09-07T14:26:21"
+    },
+    "com.github.tchar.ulauncher-albert-calculate-anything": {
+        "id": "com.github.tchar.ulauncher-albert-calculate-anything",
+        "url": "https://github.com/tchar/ulauncher-albert-calculate-anything",
+        "updated_at": "2022-05-05T18:34:32.639220",
+        "last_commit": "ee0903174c8b87cd1f7c3b6c1acef10702547507",
+        "last_commit_time": "2021-08-12T06:39:56"
+    },
+    "com.github.rnairn01.ulauncher-meme-my-text": {
+        "id": "com.github.rnairn01.ulauncher-meme-my-text",
+        "url": "https://github.com/RNairn01/ulauncher-meme-my-text",
+        "updated_at": "2022-05-05T18:37:06.560640",
+        "last_commit": "5d62830a7a92983a731e15645831f53d48dad913",
+        "last_commit_time": "2021-05-07T17:29:22"
+    },
+    "com.github.mikebarkmin.ulauncher-obsidian": {
+        "id": "com.github.mikebarkmin.ulauncher-obsidian",
+        "url": "https://github.com/mikebarkmin/ulauncher-obsidian",
+        "updated_at": "2022-05-05T18:40:25.265257",
+        "last_commit": "85c869eda769eb7cd70b341451281038b5473b92",
+        "last_commit_time": "2021-07-18T21:10:03"
+    },
+    "com.github.adamtillou.ulauncher-aurman-plugin": {
+        "id": "com.github.adamtillou.ulauncher-aurman-plugin",
+        "url": "https://github.com/AdamTillou/ulauncher-aurman-plugin",
+        "updated_at": "2022-05-05T18:41:06.282192",
+        "last_commit": "af11b33cb6ed6ec055859482bdde0353013d1378",
+        "last_commit_time": "2021-07-16T21:51:05"
+    }
+}

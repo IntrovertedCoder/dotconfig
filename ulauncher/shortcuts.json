@@ -1,0 +1,32 @@
+{
+    "fd9625da-06ee-47d2-aedc-1c9dc77d0c7e": {
+        "id": "fd9625da-06ee-47d2-aedc-1c9dc77d0c7e",
+        "name": "Searx",
+        "keyword": "s",
+        "cmd": "https://northboot.xyz/search?q=%s",
+        "icon": "~/Downloads/spotlight.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1648135212.6761627
+    },
+    "d7b37bcf-6788-4e87-a836-b9f9954feb06": {
+        "id": "d7b37bcf-6788-4e87-a836-b9f9954feb06",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1648135212.6761823
+    },
+    "54d7d454-d678-46f4-b04c-25da027fc6be": {
+        "id": "54d7d454-d678-46f4-b04c-25da027fc6be",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1648135212.6761982
+    }
+}
