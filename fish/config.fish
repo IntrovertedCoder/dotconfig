@@ -181,3 +181,6 @@ function ex --description "Extract bundled & compressed files"
        echo "'$argv[1]' is not a valid file"
    end
 end
+
+# Starship prompt
+starship init fish | source

@@ -1,0 +1,66 @@
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Remove the first newline of the prompt
+add_newline = false
+
+right_format = """$memory_usage $cmd_duration $sudo"""
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](#70AF5F)"
+error_symbol = "[✗](#BE0E0E) "
+
+[git_branch]
+truncation_length = 4
+truncation_symbol = ""
+ignore_branches = ["master", "main"]
+
+[git_commit]
+commit_hash_length = 4
+
+[git_metrics]
+added_style = "bold blue"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[git_status]
+conflicted = '[=/($count\)](#BE0E0E)'
+ahead = '[⇡\($count\)](#6E94FA)'
+behind = '[⇣\($count\)](#7D2F2F)'
+diverged = '[⇕\($count\)](#7C7B7B)'
+up_to_date = '[✓\($count\)](#5FD7FF)'
+untracked = '[?\($count\)](#B1835B)'
+stashed = '[$\($count\)](#7D51F5)'
+modified = '[!\($count\)](#FAD749)'
+staged = '[+\($count\)](#70AF5F)'
+renamed = '[»\($count\)](#F69750)'
+deleted = '[✘\($count\)](#F25757)'
+
+[python]
+symbol = " "
+
+[directory]
+read_only = ""
+format = "[$path ](#5FD7FF)[$read_only](#BE0E0E) "
+truncation_length = 16
+truncation_symbol = "…/"
+
+[sudo]
+format = "[](#F69750)"
+disabled = false
+
+[cmd_duration]
+min_time = 500
+format = "[ $duration](#FAD749)"
+
+[container]
+format = "[ \\[$name\\]](#7D51F5)"
+
+[hostname]
+format = "[$hostname](#6E94FA) in "
+disabled = false
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = "[ $ram](#3C5B33)"
