@@ -4,12 +4,13 @@ Host lights
     IdentityFile ~/.ssh/lights
     HostName 192.168.0.38
 Host server
-    User server
-    Port 69
     IdentityFile ~/.ssh/server
-    HostName 192.168.0.36
+    HostName 192.168.86.36
 Host files
     User files
     Port 69
     IdentityFile ~/.ssh/files
     HostName 192.168.0.38
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/obsidian
