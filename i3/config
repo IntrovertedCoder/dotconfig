@@ -23,6 +23,12 @@ set $term alacritty
 # Your prefered file manager
 set $file ranger
 
+# Your prefered music player (get from playerctl -l)
+set $music sublimemusic
+
+# Your prefered music player (get from playerctl -l)
+set $web firefox
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -69,7 +75,7 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
     exec ulauncher --no-window-shadow --hide-window
 
     # Firefox
-    bindsym $mod+t exec firefox
+    bindsym $mod+t exec $web
 
     # Screenshots
     bindsym Print exec scrot $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
