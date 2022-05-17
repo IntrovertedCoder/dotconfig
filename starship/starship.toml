@@ -37,7 +37,7 @@ renamed = '[»\($count\)](#F69750)'
 deleted = '[✘\($count\)](#F25757)'
 
 [python]
-symbol = " "
+symbol = ""
 
 [directory]
 read_only = ""
