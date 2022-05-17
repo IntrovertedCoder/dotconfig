@@ -4,7 +4,7 @@ scan_timeout = 10
 # Remove the first newline of the prompt
 add_newline = false
 
-right_format = """$memory_usage $cmd_duration $sudo"""
+right_format = """$status $memory_usage $cmd_duration $sudo"""
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character] # The name of the module we are configuring is "character"
@@ -64,3 +64,13 @@ disabled = false
 disabled = false
 threshold = -1
 format = "[ $ram](#3C5B33)"
+
+[status]
+symbol = ""
+success_symbol = ""
+not_found_symbol = ""
+sigint_symbol = ""
+not_executable_symbol = ""
+format = '[\($symbol$common_meaning$signal_name$maybe_int\)](#101010)'
+map_symbol = true
+disabled = false
