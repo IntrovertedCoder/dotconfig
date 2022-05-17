@@ -104,11 +104,15 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
     bindsym $mod+XF86AudioPlay exec playerctl --player=$music play-pause
     bindsym $mod+XF86AudioNext exec playerctl --player=$music next
     bindsym $mod+XF86AudioPrev exec playerctl --player=$music previous
+    bindsym Control+$mod+XF86AudioNext exec playerctl --player=$music position 15+
+    bindsym Control+$mod+XF86AudioPrev exec playerctl --player=$music position 15-
 
     # Webbroswer audio control
     bindsym Shift+XF86AudioPlay exec playerctl --player=$web play-pause
     bindsym Shift+XF86AudioNext exec playerctl --player=$web next
     bindsym Shift+XF86AudioPrev exec playerctl --player=$web previous
+    bindsym Control+Shift+XF86AudioNext exec playerctl --player=$web position 30+
+    bindsym Control+Shift+XF86AudioPrev exec playerctl --player=$web position 30-
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
