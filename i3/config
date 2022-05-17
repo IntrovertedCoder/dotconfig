@@ -26,7 +26,7 @@ set $file ranger
 # Your prefered music player (get from playerctl -l)
 set $music sublimemusic
 
-# Your prefered music player (get from playerctl -l)
+# Your prefered web browser command
 set $web firefox
 
 ### Output configuration
