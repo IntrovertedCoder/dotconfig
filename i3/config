@@ -248,3 +248,5 @@ for_window [class="Pulseeffects"] move scratchpad
     exec mailspring -b
     exec flameshot
     exec pulseeffects
+
+hide_edge_borders smart
