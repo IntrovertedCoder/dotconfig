@@ -1,58 +1,156 @@
 {
-    "com.github.tchar.ulauncher-albert-files": {
-        "id": "com.github.tchar.ulauncher-albert-files",
-        "url": "https://github.com/tchar/ulauncher-albert-files",
-        "updated_at": "2022-05-05T15:45:05.909024",
-        "last_commit": "38d96d9d4c44a817b55ddbb38151339dc738ec87",
-        "last_commit_time": "2021-07-09T07:55:05"
-    },
-    "com.github.carlosmape.ulauncher-calendar": {
-        "id": "com.github.carlosmape.ulauncher-calendar",
-        "url": "https://github.com/Carlosmape/ulauncher-calendar",
-        "updated_at": "2022-05-05T18:30:18.219511",
-        "last_commit": "971c8f620438f90349811fa2e554832588a21748",
-        "last_commit_time": "2022-05-02T15:36:53"
-    },
-    "com.github.tevenfeng.ulauncher-dc": {
-        "id": "com.github.tevenfeng.ulauncher-dc",
-        "url": "https://github.com/tevenfeng/ulauncher-dc",
-        "updated_at": "2022-05-05T18:31:29.271087",
-        "last_commit": "9d1cb6922a4ab61bbbcfde990a5fc3aa1f0d16f4",
-        "last_commit_time": "2022-04-23T09:41:59"
-    },
     "com.github.dhelmr.ulauncher-tldr": {
         "id": "com.github.dhelmr.ulauncher-tldr",
         "url": "https://github.com/dhelmr/ulauncher-tldr",
-        "updated_at": "2022-05-05T18:33:50.281507",
+        "updated_at": "2022-06-10T23:31:57.247529",
         "last_commit": "2ad5d29963db649775f68a7815af18509f4c287f",
         "last_commit_time": "2021-09-07T14:26:21"
     },
     "com.github.tchar.ulauncher-albert-calculate-anything": {
         "id": "com.github.tchar.ulauncher-albert-calculate-anything",
         "url": "https://github.com/tchar/ulauncher-albert-calculate-anything",
-        "updated_at": "2022-05-05T18:34:32.639220",
+        "updated_at": "2022-06-10T23:32:11.312220",
         "last_commit": "ee0903174c8b87cd1f7c3b6c1acef10702547507",
         "last_commit_time": "2021-08-12T06:39:56"
     },
     "com.github.rnairn01.ulauncher-meme-my-text": {
         "id": "com.github.rnairn01.ulauncher-meme-my-text",
         "url": "https://github.com/RNairn01/ulauncher-meme-my-text",
-        "updated_at": "2022-05-05T18:37:06.560640",
+        "updated_at": "2022-06-10T23:44:18.083525",
         "last_commit": "5d62830a7a92983a731e15645831f53d48dad913",
         "last_commit_time": "2021-05-07T17:29:22"
     },
     "com.github.mikebarkmin.ulauncher-obsidian": {
         "id": "com.github.mikebarkmin.ulauncher-obsidian",
         "url": "https://github.com/mikebarkmin/ulauncher-obsidian",
-        "updated_at": "2022-05-05T18:40:25.265257",
-        "last_commit": "85c869eda769eb7cd70b341451281038b5473b92",
-        "last_commit_time": "2021-07-18T21:10:03"
+        "updated_at": "2022-06-10T23:45:44.268312",
+        "last_commit": "1da31425580691328745826376434b3cff69ffcf",
+        "last_commit_time": "2022-06-03T10:38:34"
     },
     "com.github.adamtillou.ulauncher-aurman-plugin": {
         "id": "com.github.adamtillou.ulauncher-aurman-plugin",
         "url": "https://github.com/AdamTillou/ulauncher-aurman-plugin",
-        "updated_at": "2022-05-05T18:41:06.282192",
+        "updated_at": "2022-06-10T23:47:50.143418",
         "last_commit": "af11b33cb6ed6ec055859482bdde0353013d1378",
         "last_commit_time": "2021-07-16T21:51:05"
+    },
+    "com.github.d-enk.ulauncher-case-converter": {
+        "id": "com.github.d-enk.ulauncher-case-converter",
+        "url": "https://github.com/d-enk/ulauncher-case-converter",
+        "updated_at": "2022-06-10T23:38:57.477919",
+        "last_commit": "207af71947e955ca61dba748285849ff6b87a4b1",
+        "last_commit_time": "2022-06-02T08:37:42"
+    },
+    "com.github.eckhoff42.ulauncher-md-table-generator": {
+        "id": "com.github.eckhoff42.ulauncher-md-table-generator",
+        "url": "https://github.com/Eckhoff42/Ulauncher-MD-table-generator",
+        "updated_at": "2022-06-10T23:39:06.766598",
+        "last_commit": "578e4e98b297b6d2565731148c497ea8c4a6c36c",
+        "last_commit_time": "2022-05-18T14:23:21"
+    },
+    "com.github.lighttigerxiv.ulauncher-session-manager": {
+        "id": "com.github.lighttigerxiv.ulauncher-session-manager",
+        "url": "https://github.com/lighttigerXIV/ulauncher-session-manager",
+        "updated_at": "2022-06-10T23:40:17.709687",
+        "last_commit": "f8b93ed7c322ebd7d85bc89cd7ade77d27ca4db1",
+        "last_commit_time": "2022-05-16T19:07:18"
+    },
+    "com.github.carlosmape.ulauncher-calendar": {
+        "id": "com.github.carlosmape.ulauncher-calendar",
+        "url": "https://github.com/Carlosmape/ulauncher-calendar",
+        "updated_at": "2022-06-10T23:40:29.340738",
+        "last_commit": "2bb374f43a80fcc8be83f2a9cd3fc98f75e1e916",
+        "last_commit_time": "2022-05-11T18:41:46"
+    },
+    "com.github.zakuciael.ulauncher-wiki-search": {
+        "id": "com.github.zakuciael.ulauncher-wiki-search",
+        "url": "https://github.com/zakuciael/ulauncher-wiki-search",
+        "updated_at": "2022-06-10T23:40:56.900129",
+        "last_commit": "2344db8ad86df13b34fb0e84bdde66ba884b1808",
+        "last_commit_time": "2022-04-17T14:29:13"
+    },
+    "com.github.hillaryychan.ulauncher-fzf": {
+        "id": "com.github.hillaryychan.ulauncher-fzf",
+        "url": "https://github.com/hillaryychan/ulauncher-fzf",
+        "updated_at": "2022-06-10T23:41:32.365865",
+        "last_commit": "a2d2d4e26dc8c5ecee808a9dd35ee8efddb71be9",
+        "last_commit_time": "2022-05-29T09:04:12"
+    },
+    "com.github.troublor.ulauncher-numconverter": {
+        "id": "com.github.troublor.ulauncher-numconverter",
+        "url": "https://github.com/Troublor/ulauncher-numconverter",
+        "updated_at": "2022-06-10T23:43:25.258762",
+        "last_commit": "98d5e01d82671eedc98c000053980ae7ceb4ea28",
+        "last_commit_time": "2021-09-29T13:19:39"
+    },
+    "com.github.fajtak.ulauncher-weather": {
+        "id": "com.github.fajtak.ulauncher-weather",
+        "url": "https://github.com/fajtak/ulauncher-weather",
+        "updated_at": "2022-06-10T23:43:49.867132",
+        "last_commit": "996da704e505776753f6340755d20f03075c2be8",
+        "last_commit_time": "2022-04-05T18:23:30"
+    },
+    "com.github.brpaz.ulauncher-faker": {
+        "id": "com.github.brpaz.ulauncher-faker",
+        "url": "https://github.com/brpaz/ulauncher-faker",
+        "updated_at": "2022-06-10T23:44:08.586082",
+        "last_commit": "58832c94acc671a9f603ea7fbf5d4405110bb902",
+        "last_commit_time": "2021-12-12T15:46:10"
+    },
+    "com.github.ygun.ulauncher-nm": {
+        "id": "com.github.ygun.ulauncher-nm",
+        "url": "https://github.com/ygun/ulauncher-nm",
+        "updated_at": "2022-06-10T23:44:37.169803",
+        "last_commit": "036a0b3b24fb325f7aa648872c916d04966e7101",
+        "last_commit_time": "2021-02-03T13:17:59"
+    },
+    "com.github.fsevenm.ulauncher-wordc": {
+        "id": "com.github.fsevenm.ulauncher-wordc",
+        "url": "https://github.com/fsevenm/ulauncher-wordc",
+        "updated_at": "2022-06-10T23:45:21.063097",
+        "last_commit": "e286371cbf7faf909fa50b3b14776978e3f07073",
+        "last_commit_time": "2021-01-14T02:32:41"
+    },
+    "com.github.nurgasemetey.ulauncher-timestamp-macros": {
+        "id": "com.github.nurgasemetey.ulauncher-timestamp-macros",
+        "url": "https://github.com/nurgasemetey/ulauncher-timestamp-macros",
+        "updated_at": "2022-06-10T23:46:04.561895",
+        "last_commit": "924f8230bc43ed20a16475b8e30976b639db4d68",
+        "last_commit_time": "2021-11-16T09:51:21"
+    },
+    "com.github.manahter.ulauncher-ip-analysis": {
+        "id": "com.github.manahter.ulauncher-ip-analysis",
+        "url": "https://github.com/manahter/ulauncher-IP-Analysis",
+        "updated_at": "2022-06-10T23:46:31.719274",
+        "last_commit": "ea408404cd5c860664e770bd49c03fcaa3681116",
+        "last_commit_time": "2021-12-29T16:25:34"
+    },
+    "com.github.luispabon.ulauncher-virtualbox": {
+        "id": "com.github.luispabon.ulauncher-virtualbox",
+        "url": "https://github.com/luispabon/ulauncher-virtualbox",
+        "updated_at": "2022-06-10T23:48:40.310418",
+        "last_commit": "d8f495df3c7f41ee8493b207d17f06fc0372c84e",
+        "last_commit_time": "2020-09-23T01:29:15"
+    },
+    "com.github.brpaz.ulauncher-encoder": {
+        "id": "com.github.brpaz.ulauncher-encoder",
+        "url": "https://github.com/brpaz/ulauncher-encoder",
+        "updated_at": "2022-06-10T23:48:51.903855",
+        "last_commit": "71a01779907ec8de5a66e6305a1b941cadcbe226",
+        "last_commit_time": "2021-12-12T15:46:01"
+    },
+    "com.github.zensoup.ulauncher-unicode": {
+        "id": "com.github.zensoup.ulauncher-unicode",
+        "url": "https://github.com/zensoup/ulauncher-unicode",
+        "updated_at": "2022-06-10T23:49:00.874329",
+        "last_commit": "0ad36c00a888e687b4bfbf76f266f1000040b337",
+        "last_commit_time": "2019-07-11T06:53:31"
+    },
+    "com.github.ralcaidev.ulauncher-extension-list": {
+        "id": "com.github.ralcaidev.ulauncher-extension-list",
+        "url": "https://github.com/ralcaidev/ulauncher-extension-list",
+        "updated_at": "2022-06-10T23:49:27.635471",
+        "last_commit": "0cb7711bc1dc89a76bcb89d29082e18deac28227",
+        "last_commit_time": "2019-07-19T06:31:41"
     }
 }

@@ -18,15 +18,5 @@
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1648135212.6761823
-    },
-    "54d7d454-d678-46f4-b04c-25da027fc6be": {
-        "id": "54d7d454-d678-46f4-b04c-25da027fc6be",
-        "name": "Wikipedia",
-        "keyword": "wiki",
-        "cmd": "https://en.wikipedia.org/wiki/%s",
-        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
-        "is_default_search": true,
-        "run_without_argument": false,
-        "added": 1648135212.6761982
     }
 }
