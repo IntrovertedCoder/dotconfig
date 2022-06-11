@@ -3,7 +3,7 @@
         "id": "fd9625da-06ee-47d2-aedc-1c9dc77d0c7e",
         "name": "Searx",
         "keyword": "s",
-        "cmd": "https://northboot.xyz/search?q=%s",
+        "cmd": "http://192.168.86.37:8888/search?q=%s",
         "icon": "~/Downloads/spotlight.png",
         "is_default_search": true,
         "run_without_argument": false,
@@ -18,5 +18,15 @@
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1648135212.6761823
+    },
+    "d195631b-f456-418e-a42f-1a863dc3d29a": {
+        "id": "d195631b-f456-418e-a42f-1a863dc3d29a",
+        "name": "Google",
+        "keyword": "g",
+        "cmd": "https://www.google.com/search?q=a%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1654958542.9331
     }
 }

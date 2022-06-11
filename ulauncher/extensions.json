@@ -152,5 +152,61 @@
         "updated_at": "2022-06-10T23:49:27.635471",
         "last_commit": "0cb7711bc1dc89a76bcb89d29082e18deac28227",
         "last_commit_time": "2019-07-19T06:31:41"
+    },
+    "com.github.brpaz.ulauncher-devhints": {
+        "id": "com.github.brpaz.ulauncher-devhints",
+        "url": "https://github.com/brpaz/ulauncher-devhints",
+        "updated_at": "2022-06-11T10:39:05.276269",
+        "last_commit": "90d274adcc4f560ed63e510ab1dfa9e1979723c8",
+        "last_commit_time": "2019-12-03T20:18:02"
+    },
+    "com.github.luasenvy.ulauncher-expr": {
+        "id": "com.github.luasenvy.ulauncher-expr",
+        "url": "https://github.com/luasenvy/ulauncher-expr",
+        "updated_at": "2022-06-11T10:44:44.375653",
+        "last_commit": "9ee2177a22a70a471fed31cbeb43075fdbfcd585",
+        "last_commit_time": "2021-12-06T06:10:28"
+    },
+    "com.github.brpaz.ulauncher-shortcuts": {
+        "id": "com.github.brpaz.ulauncher-shortcuts",
+        "url": "https://github.com/brpaz/ulauncher-shortcuts",
+        "updated_at": "2022-06-11T10:47:26.147678",
+        "last_commit": "8f226b0cbe744221ce441cd09853b0abe06e78fd",
+        "last_commit_time": "2022-02-05T15:11:07"
+    },
+    "com.github.sergius02.ulauncher-colorconverter": {
+        "id": "com.github.sergius02.ulauncher-colorconverter",
+        "url": "https://github.com/sergius02/ulauncher-colorconverter",
+        "updated_at": "2022-06-11T10:48:17.427820",
+        "last_commit": "2d5e2bc17e89f1f1dc561f73e68ea574e0be844a",
+        "last_commit_time": "2020-12-06T20:59:43"
+    },
+    "com.github.brpaz.ulauncher-awesomelists": {
+        "id": "com.github.brpaz.ulauncher-awesomelists",
+        "url": "https://github.com/brpaz/ulauncher-awesomelists",
+        "updated_at": "2022-06-11T10:51:41.491967",
+        "last_commit": "a48a0b11cef4c2fb5375b11834ce0378be2d15d3",
+        "last_commit_time": "2021-12-12T15:44:13"
+    },
+    "com.github.luzifer.ulauncher-autotype": {
+        "id": "com.github.luzifer.ulauncher-autotype",
+        "url": "https://github.com/Luzifer/ulauncher-autotype",
+        "updated_at": "2022-06-11T10:55:23.340643",
+        "last_commit": "569694d3f2b84a57e8a2e0b5b021cf4cbbeb98e7",
+        "last_commit_time": "2019-09-22T12:13:08"
+    },
+    "com.github.ochuzor.ulauncher-cheat-sheet-extension": {
+        "id": "com.github.ochuzor.ulauncher-cheat-sheet-extension",
+        "url": "https://github.com/ochuzor/ulauncher-cheat-sheet-extension",
+        "updated_at": "2022-06-11T10:56:03.984338",
+        "last_commit": "c7eafaff693a870936808b82a0350b834d6f7f9d",
+        "last_commit_time": "2020-06-29T20:00:21"
+    },
+    "com.github.lohenyumnam.ulauncher-spell": {
+        "id": "com.github.lohenyumnam.ulauncher-spell",
+        "url": "https://github.com/lohenyumnam/ulauncher-spell",
+        "updated_at": "2022-06-11T10:57:47.862600",
+        "last_commit": "9da31c426aacf410263df82d3609a147728733f3",
+        "last_commit_time": "2021-03-08T15:23:24"
     }
 }
