@@ -18,7 +18,8 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu -nb '#080606' -sf '#080606' -sb '#41D0FF' -nf '#41D0FF'  | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu -nb '#080606' -sf '#080606' -sb '#41D0FF' -nf '#41D0FF'  | xargs swaymsg exec --
+set $menu ulauncher-toggle
 # Your prefered file manager
 set $file ranger
 
@@ -90,6 +91,7 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    exec ulauncher --no-window-shadow --hide-window
 
     # Firefox
     bindsym $mod+t exec firefox
@@ -282,3 +284,4 @@ for_window [class="discord"] move workspace 4
 for_window [class="Spotify"] move workspace 10
 for_window [app_id="org.pwmt.zathura"] move workspace 5
 for_window [class="Gimp"] move workspace 6
+for_window [app_id="ulauncher"] border normal 0, border pixel 0
