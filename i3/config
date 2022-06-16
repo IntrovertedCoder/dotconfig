@@ -78,9 +78,7 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
     bindsym $mod+t exec $web
 
     # Screenshots
-    bindsym Print exec scrot $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
-    bindsym Mod1+Print exec scrot -u $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
-    bindsym Mod1+Shift+Print exec scrot -s $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
+    bindsym Print exec flameshot gui
 
     # File manager
     bindsym $mod+F1 exec alacritty -e $file
@@ -241,6 +239,7 @@ for_window [class="discord"] move workspace 4
 for_window [class="Spotify"] move workspace 10
 for_window [instance="floating"] floating enabled
 for_window [class="Pulseeffects"] move scratchpad
+for_window [class="VirtualBox Machine"] floating enable, resize set 1920 1080
 
 
 # Run at i3 start
