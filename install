@@ -129,6 +129,7 @@ fi
     sudo ls -n ~/.config/dots/scripts/exa /usr/local/bin
     # sudo commands {{{
         sudo ln -s ~/.config/dots/bin/googler /bin/googler
+        sudo ln -s ~/.config/dots/bin/i3lockCustom /bin/i3lockCustom
         sudo ls -s ~/.config/dots/scripts/scan /bin/scan
     # }}}
 # }}}
