@@ -10,7 +10,7 @@ function fish_greeting
     if ps -p $SSH_AGENT_PID > /dev/null
         set sshagent "SET"
     else
-        ssh-agent /usr/bin/fish
+        ssh-agent /usr/bin/fish && exit
     end
 
     # Set EDITOR/VISUAL to vim
