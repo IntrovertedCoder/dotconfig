@@ -9,6 +9,14 @@ function fish_greeting
     # Note this doesn't add identity files
     if ps -p $SSH_AGENT_PID > /dev/null
         set sshagent "SET"
+
+        # Start either startx or sway
+        if test -z $DISPLAY; and test (tty) = "/dev/tty1"
+            startx && exit
+        end
+        else if test -z $DISPLAY; and test (tty) = "/dev/tty2"
+            sway && exit
+        end
     else
         ssh-agent /usr/bin/fish && exit
     end
@@ -30,16 +38,6 @@ function fish_greeting
     cd ~/.config/dots > /dev/null
     git pull https://github.com/IntrovertedCoder/dotconfig --quiet&
     cd $cwd > /dev/null
-end
-
-# Start sway on tty2
-if test -z $DISPLAY; and test (tty) = "/dev/tty2"
-    sway
-end
-
-# Start startx on tty1
-if test -z $DISPLAY; and test (tty) = "/dev/tty1"
-    startx
 end
 
 # Custom Aliases
