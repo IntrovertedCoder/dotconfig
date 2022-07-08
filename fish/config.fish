@@ -13,7 +13,6 @@ function fish_greeting
         # Start either startx or sway
         if test -z $DISPLAY; and test (tty) = "/dev/tty1"
             startx && exit
-        end
         else if test -z $DISPLAY; and test (tty) = "/dev/tty2"
             sway && exit
         end
