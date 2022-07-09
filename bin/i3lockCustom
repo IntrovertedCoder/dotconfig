@@ -7,5 +7,7 @@ BLUR="7x6"
 
 $SCREENSHOT
 convert $PICTURE -blur $BLUR $PICTURE
+dunstctl set-paused true
 i3lock -i $PICTURE
+dunstctl set-paused false
 rm $PICTURE

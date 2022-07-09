@@ -226,6 +226,11 @@ exec_always --no-startup-id /home/arik/.config/polybar/polybar.sh
 # Auto lock
 exec "xautolock -detectsleep -time 3 -locker \"i3lockCustom\" -corners +--- -cornersize 100"
 
+# Notifications
+bindsym $mod+n exec "dunstctl history-pop"
+bindsym $mod+m exec "dunstctl close"
+bindsym $mod+Shift+m exec "dunstctl close-all"
+
 # class                 border  bground text    indicator child_border
 client.focused          #652EFB #652EFB #EFEFEF #652EFB   #285577
 client.focused_inactive #1E1C1C #1E1C1C #EFEFEF #484E50   #1E1C1C
