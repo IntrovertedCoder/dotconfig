@@ -288,6 +288,7 @@ for_window [class="Gimp"] move workspace 6
 for_window [app_id="ulauncher"] border normal 0, border pixel 0
 
 # Autostart?
+xwayland enable
 exec dunst
 
 # Notification keybinds
