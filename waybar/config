@@ -75,7 +75,8 @@
         "format": " {percent}% {icon} ",
         "format-icons": ["", ""],
         "on-scroll-down": "~/.config/sway/brightness.waybar -d",
-        "on-scroll-up": "~/.config/sway/brightness.waybar -u"
+        "on-scroll-down": "/sbin/backlight_control -5",
+        "on-scroll-up": "/sbin/backlight_control +5"
     },
     "battery": {
         "states": {
