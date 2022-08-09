@@ -126,8 +126,8 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
 
 
     # Brightness control
-    bindsym $mod+F12 exec /home/arik/.config/sway/brightness -u
-    bindsym $mod+F11 exec /home/arik/.config/sway/brightness -d
+    bindsym $mod+F12 exec /sbin/backlight_control +10
+    bindsym $mod+F11 exec /sbin/backlight_control -10
 
     # Audio control (Arch wiki)
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
