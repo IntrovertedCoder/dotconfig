@@ -286,3 +286,11 @@ for_window [class="Spotify"] move workspace 10
 for_window [app_id="org.pwmt.zathura"] move workspace 5
 for_window [class="Gimp"] move workspace 6
 for_window [app_id="ulauncher"] border normal 0, border pixel 0
+
+# Autostart?
+exec dunst
+
+# Notification keybinds
+bindsym $mod+n exec "dunstctl history-pop"
+bindsym $mod+m exec "dunstctl close"
+bindsym $mod+Shift+m exec "dunstctl close-all"
