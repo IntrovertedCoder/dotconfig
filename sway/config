@@ -41,8 +41,6 @@ output "*" bg /home/arik/Pictures/Wallpapers/wallpaper.jpg fill
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 "swaylock -c 080606 --ring-color=5fd7ff --text-color=70af5f --ring-clear-color=efefef --ring-clear-color=7d51f5 --text-wrong-color=f25757" \
-         timeout 600 "swaymsg output * dpms off" resume "swaymsg output * dpms on" \
          before-sleep "swaylock -c 080606 --ring-color=5fd7ff --text-color=70af5f --ring-clear-color=efefef --ring-clear-color=7d51f5 --text-wrong-color=f25757"
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
