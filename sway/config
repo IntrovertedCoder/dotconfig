@@ -108,6 +108,8 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
 
     # Htop term
     bindsym $mod+F2 exec alacritty -t btop -e btop
+    for_window [title="btop"] floating enable
+    for_window [title="btop"] resize set 724 457
 
     # Music controller (floating)
     bindsym $mod+F3 exec alacritty -t ncmpc -e ncmpc
