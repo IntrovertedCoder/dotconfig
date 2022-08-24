@@ -112,7 +112,7 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
     # Music controller (floating)
     bindsym $mod+F3 exec alacritty -t ncmpc -e ncmpc
     for_window [title="ncmpc"] floating enable
-    for_window [title="ncmpc"] resize set 589 385
+    for_window [title="ncmpc"] resize set 724 457
 
     # Rotate Display
     bindsym $mod+F10 mode "rotate"
