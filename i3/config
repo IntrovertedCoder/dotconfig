@@ -167,16 +167,16 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
     # We just use 1-10 as the default.
 
     # Assigning workspaces to monitors
-    workspace 1 output DP-0
-    workspace 3 output DP-0
-    workspace 5 output DP-0
-    workspace 7 output DP-0
-    workspace 9 output DP-0
-    workspace 2 output HDMI-0
-    workspace 4 output HDMI-0
-    workspace 6 output HDMI-0
-    workspace 8 output HDMI-0
-    workspace 10 output HDMI-0
+    workspace 1 output HDMI-0
+    workspace 3 output HDMI-0
+    workspace 5 output HDMI-0
+    workspace 7 output HDMI-0
+    workspace 9 output HDMI-0
+    workspace 2 output DP-0
+    workspace 4 output DP-0
+    workspace 6 output DP-0
+    workspace 8 output DP-0
+    workspace 10 output DP-0
 #
 # Layout stuff:
 #
@@ -251,7 +251,6 @@ for_window [class="VirtualBox Machine"] floating enable, resize set 1920 1080
 
 
 # Run at i3 start
-    exec xrandr --dpi 100
     exec mailspring -b
     exec flameshot
     exec pulseeffects
