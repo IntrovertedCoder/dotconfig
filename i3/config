@@ -205,6 +205,18 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
 
     # Allow mod+drag to move floating window
     floating_modifier $mod
+
+#
+# Music
+#
+    bindsym $mod+F3 exec alacritty -t ncmpc -e ncmpc
+    for_window [title="ncmpc"] floating enable
+    for_window [title="ncmpc"] resize set 724 457
+    bindsym $mod+period exec mpc next
+    bindsym $mod+comma exec mpc prev
+    bindsym $mod+apostrophe exec mpc play
+    bindsym $mod+semicolon exec mpc pause
+    bindsym $mod+shift+F1 exec mpc toggle
 #
 # Scratchpad:
 #
