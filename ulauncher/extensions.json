@@ -208,5 +208,19 @@
         "updated_at": "2022-08-08T18:09:58.208514",
         "last_commit": "9da31c426aacf410263df82d3609a147728733f3",
         "last_commit_time": "2021-03-08T15:23:24"
+    },
+    "com.github.epholys.ultz": {
+        "id": "com.github.epholys.ultz",
+        "url": "https://github.com/Epholys/ultz",
+        "updated_at": "2022-09-16T15:05:04.891194",
+        "last_commit": "9f0749d6ab1fcb99545dae75934b698e5ff975b6",
+        "last_commit_time": "2021-05-12T14:01:01"
+    },
+    "com.github.lazypolymath.ulauncher-git-cheat-sheet": {
+        "id": "com.github.lazypolymath.ulauncher-git-cheat-sheet",
+        "url": "https://github.com/lazypolymath/ulauncher-git-cheat-sheet",
+        "updated_at": "2022-09-16T15:07:20.685166",
+        "last_commit": "15b758027158a0a67c364373ad87381252c9b71c",
+        "last_commit_time": "2022-08-30T09:07:44"
     }
 }
