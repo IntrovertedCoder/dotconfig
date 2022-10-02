@@ -216,11 +216,17 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
     bindsym F17 exec mpc clear
     bindsym F18 exec mpc volume +5
     bindsym F19 exec mpc load Weekly
-    bindsym F20 exec mpc load Daily
-    bindsym F21 exec mpc load New_Playlist_5 New_Playlist_2
+    bindsym Shift+F19 exec mpc load Daily
+    bindsym F20 exec mpc load This
+    bindsym Shift+F20 exec mpc load That
+    bindsym F21 exec mpc load New_Playlist_2
+    bindsym Shift+F21 exec mpc load New_Playlist_5
     bindsym F22 exec mpc load favs
+    bindsym Shift+F22 exec mpc load lex
     bindsym F23 exec mpc load YTLikesSpotify
+    bindsym Shift+F23 exec mpc load SomethingCompletelyDifferent
     bindsym F24 exec mpc load Background
+    bindsym Shift+F24 exec mpc load EDM
     bindsym $mod+shift+F1 exec mpc toggle
 #
 # Scratchpad:
