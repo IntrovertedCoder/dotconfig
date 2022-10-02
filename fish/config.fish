@@ -37,6 +37,7 @@ function fish_greeting
     cd ~/.config/dots > /dev/null
     git pull https://github.com/IntrovertedCoder/dotconfig --quiet&
     cd $cwd > /dev/null
+    fortune -s
 end
 
 # Custom Aliases
