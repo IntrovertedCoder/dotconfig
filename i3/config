@@ -83,9 +83,6 @@ exec --no-startup-id feh --bg-center /home/arik/.config/dots/wallpapers/wallpape
     # File manager
     bindsym $mod+F1 exec alacritty -e $file
 
-    # ssh-agent term
-    bindsym $mod+F5 exec ssh-agent alacritty
-
     # Htop term
     bindsym $mod+F2 exec alacritty -t btop -e btop
 
