@@ -2,6 +2,6 @@
 
 set cwd $PWD
 rm ~/.files
-cpulimit --limit=2 -i du -ha --time=ctime --exclude={.git,.cache,/home/arik/.cargo} / 1> ~/.files 2> /dev/null
+cpulimit --limit=2 -i du -ha --time=ctime --exclude={.git,.cache,/home/arik/.cargo,timeshift,proc} / 1> ~/.files 2> /dev/null
 mv ~/.files ~/files
 cd $cwd
