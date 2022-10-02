@@ -130,7 +130,7 @@ fi
     ln -s ~/.config/dots/starship/starship.toml ~/.config
     # sudo commands {{{
         sudo ln -s ~/.config/dots/bin/i3lockCustom /bin/i3lockCustom
-        sudo ls -s ~/.config/dots/scripts/scan /bin/scan
+        sudo ln -s ~/.config/dots/scripts/scan /bin/scan
     # }}}
 # }}}
 
