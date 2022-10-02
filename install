@@ -128,11 +128,7 @@ fi
     ln -s ~/.config/dots/htop ~/.config/htop
     rm ~/.config/starship.toml
     ln -s ~/.config/dots/starship/starship.toml ~/.config
-    rm /usr/local/bin/exa
-    rm /usr/local/bin/exa
-    sudo ls -n ~/.config/dots/scripts/exa /usr/local/bin
     # sudo commands {{{
-        sudo ln -s ~/.config/dots/bin/googler /bin/googler
         sudo ln -s ~/.config/dots/bin/i3lockCustom /bin/i3lockCustom
         sudo ls -s ~/.config/dots/scripts/scan /bin/scan
     # }}}
