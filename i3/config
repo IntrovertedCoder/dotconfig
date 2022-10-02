@@ -276,6 +276,6 @@ for_window [class="VirtualBox Machine"] floating enable, resize set 1920 1080
 # Run at i3 start
     exec mailspring -b
     exec flameshot
-    exec pulseeffects
+    exec easyeffects -w
 
 hide_edge_borders smart
