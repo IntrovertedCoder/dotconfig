@@ -127,8 +127,10 @@ keys = [
 
 games = [Match(wm_class=["Minecraft Launcher"]),
          Match(wm_class=["Minecraft* 1.18.2"]),
+         Match(wm_class=["Minecraft* 1.16.5"]),
          Match(wm_class=["Minecraft 1.16.5"]),
          Match(wm_class=["Steam"]),
+         Match(wm_class=["polymc"]),
         ]
 
 groups = [Group("1"),
