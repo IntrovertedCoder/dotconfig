@@ -218,7 +218,9 @@ screens = [
                        widget.Net(interface="enp5s0", use_bits=True, prefix="M"),
                        seperator,
                        widget.Clock(format="%a %-H:%M")
-                       ], 24)),
+                       ], 24),
+          wallpaper='~/.config/qtile/Main.png',
+          wallpaper_mode='stretch'),
     Screen(top=bar.Bar([ # Left
                        widget.CurrentLayout(),
                        widget.GroupBox(visible_groups=['2', '4', '6', '8', '0'],
@@ -238,7 +240,9 @@ screens = [
                        seperator,
                        widget.Volume(),
                        seperator,
-                       widget.Systray()], 24))
+                       widget.Systray()], 24),
+          wallpaper='~/.config/qtile/Second.png',
+          wallpaper_mode='stretch')
 ]
 
 # Drag floating layouts.
