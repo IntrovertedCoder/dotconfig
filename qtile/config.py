@@ -205,6 +205,8 @@ screens = [
                                        this_screen_border="346F83",
                                        this_current_screen_border="5FD7FF",
                                        urgent_border="F25757"),
+                       seperator,
+                       widget.Pomodoro(),
                        # Center
                        widget.Spacer(),
                        widget.WindowName(scroll=True, width=1000),
