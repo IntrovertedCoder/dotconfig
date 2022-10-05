@@ -167,7 +167,8 @@ for group in groups:
 
 layout_defaults = dict(
     border_focus="#5fd7ff",
-    border_normal="#7C7B7B"
+    border_normal="#7C7B7B",
+    margin=8
 )
 
 layouts = [
