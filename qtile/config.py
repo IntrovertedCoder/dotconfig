@@ -50,7 +50,6 @@ keys = [
     Key([mod], "l", lazy.layout.right(),                                  desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(),                                   desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(),                                     desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(),                               desc="Move window focus to other window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
     Key([mod, "shift"], "h", lazy.layout.shuffle_left(),                  desc="Move window to the left"),
@@ -75,6 +74,7 @@ keys = [
     Key([mod], "Tab", lazy.next_layout(),                                 desc="Next layout"),
     Key([mod, "shift"], "Tab", lazy.prev_layout(),                        desc="Previous layout"),
     Key([mod], "space", lazy.window.toggle_floating(),                    desc="Toggle floating"),
+    Key([mod], "f", lazy.window.toggle_fullscreen(),                      desc="Toggle fullscreen"),
     Key([mod, "shift"], "q", lazy.window.kill(),                          desc="Kill focused window"),
     # Qtile config stuff
     Key([mod, "shift"], "c", lazy.reload_config(),                        desc="Reload the config"),
