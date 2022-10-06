@@ -118,6 +118,8 @@ keys = [
     Key([mod], "F1", lazy.spawn("alacritty --class ranger,floating -e ranger"), desc="Open ranger floating"),
     Key([mod], "F2", lazy.spawn("alacritty --class btop,floating -e btop"), desc="Open btop floating"),
     Key([mod], "F3", lazy.spawn("alacritty --class ncmpc,floating -e ncmpc"), desc="Open ncmpc floating"),
+    Key([mod], "F4", lazy.spawn("screenkey"),                              desc="Open screenkey for screensharing"),
+    Key([mod, "shift"], "F4", lazy.spawn("killall screenkey"),             desc="Close screenkey"),
 
     # Audio control
     # Key([], XF86AudioRaiseVolume, lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"), desc="Increase volume +5%"),
