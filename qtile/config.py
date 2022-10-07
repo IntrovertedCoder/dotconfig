@@ -41,6 +41,7 @@ web = "firefox"
 file = "ranger"
 music = "ncmpcpp"
 monitor = "btop"
+alacrittyOpacity = "-o window.opacity=0.5"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -70,7 +71,6 @@ keys = [
     Key([mod, "shift"], "space", lazy.layout.flip(),                      desc="Flip the master location"),
 
     Key([mod], "Return", lazy.spawn(terminal),                            desc="Launch terminal"),
-    Key([mod, "shift"], "Return", lazy.spawn("alacritty --class alacritty,floating"), desc="Launch terminal floating"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(),                                 desc="Next layout"),
     Key([mod, "shift"], "Tab", lazy.prev_layout(),                        desc="Previous layout"),
@@ -116,9 +116,10 @@ keys = [
     Key([mod, "shift"], "m", lazy.spawn("dunstctl close-all"),            desc="Close all notification"),
 
     # Floating
-    Key([mod], "F1", lazy.spawn("alacritty --class ranger,floating -e ranger"), desc="Open ranger floating"),
-    Key([mod], "F2", lazy.spawn("alacritty --class btop,floating -e btop"), desc="Open btop floating"),
-    Key([mod], "F3", lazy.spawn("alacritty --class ncmpcpp,floating -e ncmpcpp"), desc="Open ncmpcpp floating"),
+    Key([mod], "F1", lazy.spawn("alacritty -o window.opacity=0.5 --class ranger,floating -e ranger"), desc="Open ranger floating"),
+    Key([mod], "F2", lazy.spawn("alacritty -o window.opacity=0.75 --class btop,floating -e btop"), desc="Open btop floating"),
+    Key([mod], "F3", lazy.spawn("alacritty -o window.opacity=0.5 --class ncmpcpp,floating -e ncmpcpp"), desc="Open ncmpcpp floating"),
+    Key([mod, "shift"], "Return", lazy.spawn("alacritty -o window.opacity=0.5 --class alacritty,floating"), desc="Launch terminal floating"),
 
     # Screenkey
     Key([mod], "F4", lazy.spawn("screenkey"),                              desc="Open screenkey for screensharing"),
