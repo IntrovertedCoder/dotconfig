@@ -115,6 +115,8 @@ fi
     ln -s ~/.config/dots/i3/config ~/.config/i3/config
     rm ~/.config/qtile -r
     ln -s ~/.config/dots/qtile ~/.config/
+    rm ~/.config/picom -r
+    ln -s ~/.config/dots/picom ~/.config/
     rm ~/.config/dunst-r
     ln -s ~/.config/dots/dunst ~/.config
     rm ~/.config/polybar -r
