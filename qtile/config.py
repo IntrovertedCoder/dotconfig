@@ -237,7 +237,7 @@ screens = [
                                        this_current_screen_border="5FD7FF",
                                        urgent_border="F25757"),
                        seperator,
-                       widget.CheckUpdates(distro='Arch_yay'),
+                       widget.CheckUpdates(distro='Arch_checkupdates'),
                        # Center
                        widget.Spacer(),
                        widget.Mpd2(),
