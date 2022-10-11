@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu rlaunch --color0 "#080606" --color1 "#5FD7FF" --color2 "#EFEFEF" --color3 "#080606" -f "Hack Nerd Font Mono" -h 33
+# set $menu rlaunch --color0 "#060606" --color1 "#0B68FF" --color2 "#EFEFEF" --color3 "#060606" -f "Hack Nerd Font Mono" -h 33
 
 # Your prefered file manager
 set $file ranger
@@ -246,10 +246,10 @@ bindsym $mod+m exec "dunstctl close"
 bindsym $mod+Shift+m exec "dunstctl close-all"
 
 # class                 border  bground text    indicator child_border
-client.focused          #652EFB #652EFB #EFEFEF #652EFB   #285577
-client.focused_inactive #1E1C1C #1E1C1C #EFEFEF #484E50   #1E1C1C
-client.unfocused        #1E1C1C #1E1C1C #888888 #1E1C1C   #1E1C1C
-client.urgent           #2F343A #F93535 #EFEFEF #F93535   #F93535
+client.focused          #0B68FF #0B68FF #EFEFEF #0B68FF   #3F88FF
+client.focused_inactive #3B3B3B #3B3B3B #EFEFEF #484E50   #3B3B3B
+client.unfocused        #3B3B3B #3B3B3B #949494 #3B3B3B   #3B3B3B
+client.urgent           #2F343A #C7000C #EFEFEF #C7000C   #C7000C
 client.placeholder      #000000 #0C0C0C #EFEFEF #000000   #0C0C0C
 
 client.background       #EFEFEF

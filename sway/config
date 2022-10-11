@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu -nb '#080606' -sf '#080606' -sb '#41D0FF' -nf '#41D0FF'  | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu -nb '#060606' -sf '#060606' -sb '#0B68FF' -nf '#0B68FF'  | xargs swaymsg exec --
 set $menu ulauncher-toggle
 # Your prefered file manager
 set $file ranger
@@ -41,7 +41,7 @@ output "*" bg /home/arik/Pictures/Wallpapers/wallpaper.jpg fill
 # Example configuration:
 #
 exec swayidle -w \
-         before-sleep "swaylock -c 080606 --ring-color=5fd7ff --text-color=70af5f --ring-clear-color=efefef --ring-clear-color=7d51f5 --text-wrong-color=f25757"
+         before-sleep "swaylock -c 060606 --ring-color=0B68FF--text-color=68FF0B--ring-clear-color=efefef --ring-clear-color=7E599D--text-wrong-color=C7000C"
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -258,24 +258,24 @@ bar {
     swaybar_command waybar
 
     colors {
-         background #080606
+         background #060606
          statusline #EFEFEF
-         separator  #666666
+         separator  #040404
 
-         focused_workspace  #652EFB #652EFB #EFEFEF
-         active_workspace   #1E1C1C #1E1C1C #EFEFEF
-         inactive_workspace #1E1C1C #1E1C1C #888888
-         urgent_workspace   #2F343A #F93535 #EFEFEF
-         binding_mode       #2F343A #F93535 #EFEFEF
+         focused_workspace  #0B68FF #0B68FF #EFEFEF
+         active_workspace   #3B3B3B #3B3B3B #EFEFEF
+         inactive_workspace #3B3B3B #3B3B3B #949494
+         urgent_workspace   #2F343A #C7000C #EFEFEF
+         binding_mode       #2F343A #C7000C #EFEFEF
        }
     }
 }
 
 # class                 border  bground text    indicator child_border
-client.focused          #652EFB #652EFB #EFEFEF #652EFB   #285577
-client.focused_inactive #1E1C1C #1E1C1C #EFEFEF #484E50   #1E1C1C
-client.unfocused        #1E1C1C #1E1C1C #888888 #1E1C1C   #1E1C1C
-client.urgent           #2F343A #F93535 #EFEFEF #F93535   #F93535
+client.focused          #0B68FF #0B68FF #EFEFEF #0B68FF   #3F88FF
+client.focused_inactive #3B3B3B #3B3B3B #EFEFEF #484E50   #3B3B3B
+client.unfocused        #3B3B3B #3B3B3B #949494 #3B3B3B   #3B3B3B
+client.urgent           #2F343A #C7000C #EFEFEF #C7000C   #C7000C
 client.placeholder      #000000 #0C0C0C #EFEFEF #000000   #0C0C0C
 
 client.background       #EFEFEF

@@ -172,8 +172,8 @@ for group in groups:
     keys.append(Key([mod, 'shift'], group.name, lazy.window.togroup(group.name), desc="Send window to group {}".format(group.name)))
 
 layout_defaults = dict(
-    border_focus="#5fd7ff",
-    border_normal="#7C7B7B",
+    border_focus="#0B68FF",
+    border_normal="#3B3B3B",
     margin=8
 )
 
@@ -197,7 +197,7 @@ widget_defaults = dict(
     font="Hack Nerd Font Mono",
     fontsize=12,
     padding=3,
-    background="#080606",
+    background="#060606",
     foreground="#EFEFEF"
 )
 extension_defaults = widget_defaults.copy()
@@ -208,9 +208,9 @@ screens = [
     Screen(top=bar.Bar([ # Left
                        widget.CurrentLayout(),
                        widget.GroupBox(visible_groups=['1', '3', '5', '7', '9', 'g'],
-                                       this_screen_border="346F83",
-                                       this_current_screen_border="5FD7FF",
-                                       urgent_border="F25757"),
+                                       this_screen_border="3F88FF",
+                                       this_current_screen_border="0B68FF",
+                                       urgent_border="C7000C"),
                        seperator,
                        widget.Pomodoro(),
                        # Center
@@ -233,9 +233,9 @@ screens = [
     Screen(top=bar.Bar([ # Left
                        widget.CurrentLayout(),
                        widget.GroupBox(visible_groups=['2', '4', '6', '8', '0'],
-                                       this_screen_border="346F83",
-                                       this_current_screen_border="5FD7FF",
-                                       urgent_border="F25757"),
+                                       this_screen_border="3F88FF",
+                                       this_current_screen_border="0B68FF",
+                                       urgent_border="C7000C"),
                        seperator,
                        widget.CheckUpdates(distro='Arch_checkupdates'),
                        # Center

@@ -8,8 +8,8 @@ right_format = """$status $memory_usage $cmd_duration $sudo"""
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character] # The name of the module we are configuring is "character"
-success_symbol = "[➜](#70AF5F)"
-error_symbol = "[✗](#BE0E0E) "
+success_symbol = "[➜](#4CC700)"
+error_symbol = "[✗](#C7000C)"
 
 [git_branch]
 truncation_length = 4
@@ -24,40 +24,40 @@ added_style = "bold blue"
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_status]
-conflicted = '[=/($count\)](#BE0E0E)'
-ahead = '[⇡\($count\)](#6E94FA)'
-behind = '[⇣\($count\)](#7D2F2F)'
-diverged = '[⇕\($count\)](#7C7B7B)'
-up_to_date = '[✓\($count\)](#5FD7FF)'
-untracked = '[?\($count\)](#B1835B)'
-stashed = '[$\($count\)](#7D51F5)'
-modified = '[!\($count\)](#FAD749)'
-staged = '[+\($count\)](#70AF5F)'
-renamed = '[»\($count\)](#F69750)'
-deleted = '[✘\($count\)](#F25757)'
+conflicted = '[=/($count\)](#C7000C)'
+ahead = '[⇡\($count\)](#7E599D)'
+behind = '[⇣\($count\)](#9C000A)'
+diverged = '[⇕\($count\)](#949494)'
+up_to_date = '[✓\($count\)](#0B68FF)'
+untracked = '[?\($count\)](#6A7AB4)'
+stashed = '[$\($count\)](#7E599D)'
+modified = '[!\($count\)](#D8CE08)'
+staged = '[+\($count\)](#4CC700)'
+renamed = '[»\($count\)](#D0670A)'
+deleted = '[✘\($count\)](#FF0B1B)'
 
 [python]
 symbol = ""
 
 [directory]
 read_only = ""
-format = "[$path ](#5FD7FF)[$read_only](#BE0E0E) "
+format = "[$path ](#0B68FF)[$read_only](#C7000C) "
 truncation_length = 16
 truncation_symbol = "…/"
 
 [sudo]
-format = "[](#F69750)"
+format = "[](#D0670A)"
 disabled = false
 
 [cmd_duration]
 min_time = 500
-format = "[ $duration](#FAD749)"
+format = "[ $duration](#D8CE08)"
 
 [container]
-format = "[ \\[$name\\]](#7D51F5)"
+format = "[ \\[$name\\]](#7E599D)"
 
 [hostname]
-format = "[$hostname](#6E94FA) in "
+format = "[$hostname](#7E599D) in "
 disabled = false
 
 [memory_usage]

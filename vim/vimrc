@@ -319,53 +319,53 @@ nnoremap <leader>a a <ESC>r
 " }}}
 
 " TODO text highlight {{{
-    highlight 1 ctermbg=9 ctermfg=black
-    highlight 1 guibg=#F25757 guifg=#0DA8A8
+    highlight 1 ctermbg=1 ctermfg=black
+    highlight 1 guibg=#C7000C
     call matchadd("1", "{1}")
     nnoremap <leader>1 i{1} <ESC>
 
-    highlight 2 ctermbg=202 ctermfg=black
-    highlight 2 guibg=#E2656A guifg=#1D9A95
+    highlight 2 ctermbg=1 ctermfg=black
+    highlight 2 guibg=#B20C27
     call matchadd("2", "{2}")
     nnoremap <leader>2 i{2} <ESC>
 
-    highlight 3 ctermbg=208 ctermfg=black
-    highlight 3 guibg=#D1737C guifg=#2E8C83
+    highlight 3 ctermbg=125ctermfg=black
+    highlight 3 guibg=#9D1742
     call matchadd("3", "{3}")
     nnoremap <leader>3 i{3} <ESC>
 
-    highlight 4 ctermbg=11 ctermfg=black
-    highlight 4 guibg=#C1828F guifg=#3E7D70
+    highlight 4 ctermbg=89 ctermfg=black
+    highlight 4 guibg=#88235D
     call matchadd("4", "{4}")
     nnoremap <leader>4 i{4} <ESC>
 
-    highlight 5 ctermbg=118 ctermfg=black
-    highlight 5 guibg=#B190A2 guifg=#4E6F5D
+    highlight 5 ctermbg=54 ctermfg=black
+    highlight 5 guibg=#732E78
     call matchadd("5", "{5}")
     nnoremap <leader>5 i{5} <ESC>
 
-    highlight 6 ctermbg=10 ctermfg=black
-    highlight 6 guibg=#A09EB4 guifg=#5F614B
+    highlight 6 ctermbg=60 ctermfg=black
+    highlight 6 guibg=#5F3A93
     call matchadd("6", "{6}")
     nnoremap <leader>6 i{6} <ESC>
 
-    highlight 7 ctermbg=47 ctermfg=black
-    highlight 7 guibg=#90ACC7 guifg=#6F5338
+    highlight 7 ctermbg=61 ctermfg=black
+    highlight 7 guibg=#4A45AE
     call matchadd("7", "{7}")
     nnoremap <leader>7 i{7} <ESC>
 
-    highlight 8 ctermbg=45 ctermfg=black
-    highlight 8 guibg=#80BBDA guifg=#7F4425
+    highlight 8 ctermbg=12 ctermfg=black
+    highlight 8 guibg=#3551C9
     call matchadd("8", "{8}")
     nnoremap <leader>8 i{8} <ESC>
 
-    highlight 9 ctermbg=27 ctermfg=black
-    highlight 9 guibg=#6FC9EC guifg=#903613
+    highlight 9 ctermbg=26 ctermfg=black
+    highlight 9 guibg=#205CE4
     call matchadd("9", "{9}")
     nnoremap <leader>9 i{9} <ESC>
 
-    highlight 0 ctermbg=4 ctermfg=220
-    highlight 0 guibg=#5FD7FF guifg=#A02800
+    highlight 0 ctermbg=27 ctermfg=220
+    highlight 0 guibg=#0B68FF
     call matchadd("0", "{0}")
     nnoremap <leader>0 i{0} <ESC>
     " Grep keybind {{{
