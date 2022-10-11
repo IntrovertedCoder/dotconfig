@@ -51,6 +51,3 @@ fonts:
   normal:
     family: Hack Regular Nerd Font Complete Mono
     style: Regular
-
-env:
-    TERM: xterm-256color
