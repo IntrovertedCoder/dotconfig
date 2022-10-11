@@ -240,7 +240,7 @@ screens = [
                        widget.CheckUpdates(distro='Arch_checkupdates'),
                        # Center
                        widget.Spacer(),
-                       widget.Mpd2(),
+                       widget.Mpd2(scroll=True, width=300),
                        widget.Spacer(),
                        # Right
                        widget.DF(partition='/mnt/storage', visible_on_warn=False),
