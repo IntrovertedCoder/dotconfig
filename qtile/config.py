@@ -226,7 +226,7 @@ screens = [
                        seperator,
                        widget.Net(interface="enp5s0", use_bits=True, prefix="M"),
                        seperator,
-                       widget.Clock(format="%a %-H:%M")
+                       widget.Clock(format="%a %H:%M")
                        ], 24),
           wallpaper='~/.config/qtile/Main.png',
           wallpaper_mode='stretch'),
