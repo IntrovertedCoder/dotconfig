@@ -99,6 +99,10 @@ nnoremap <leader>z 80\|F<space>xi<CR><esc>
 " Space+p
 nnoremap <silent><leader>p :set paste!<CR>
 
+" Half page up and down with centering
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
 " Insert char at cursor pos {{{
 nnoremap <leader>i i <ESC>r
 nnoremap <leader>a a <ESC>r
