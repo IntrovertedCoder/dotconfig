@@ -102,9 +102,14 @@ keys = [
     Key(["shift"], "F22", lazy.spawn("mpc load Lex"),                     desc="Load the Lex playlist (MPC)"),
     Key([], "F23", lazy.spawn("mpc load YTLikesSpotify"),                 desc="Load the YTLikesSpotify playlist (MPC)"),
     Key(["shift"], "F23", lazy.spawn("mpc load SomethingCompletelyDifferent"), desc="Load the SomethingCompletelyDifferent playlist (MPC)"),
-    Key([], "F24", lazy.spawn("mpc load Background"),                     desc="Load the Background playlist (MPC)"),
-    Key(["shift"], "F24", lazy.spawn("mpc load EDM"),                     desc="Load the EDM playlist (MPC)"),
+    # Key([], "F24", lazy.spawn("mpc load Background"),                     desc="Load the Background playlist (MPC)"),
+    # Key(["shift"], "F24", lazy.spawn("mpc load EDM"),                     desc="Load the EDM playlist (MPC)"),
     Key([mod, "shift"], "F1", lazy.spawn("mpc toggle"),                   desc="Pause/play music (MPC)"),
+
+    # Variety
+    Key([], "F24", lazy.spawn("variety -n"),                              desc="Load the next wallaper"),
+    Key(["shift"], "F24", lazy.spawn("variety -f"),                       desc="Save the current wallpaper"),
+    Key(["control"], "F24", lazy.spawn("variety -t"),                     desc="Trash the current wallpaper"),
 
     # Web browsers
     Key([mod], "t", lazy.spawn(web),                                      desc="Open web browser"),
