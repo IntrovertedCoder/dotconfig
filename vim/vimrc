@@ -99,7 +99,7 @@ nnoremap <leader>z 80\|F<space>xi<CR><esc>
 " Space+p
 nnoremap <silent><leader>p :set paste!<CR>
 
-" Insert chat at cursor pos {{{
+" Insert char at cursor pos {{{
 nnoremap <leader>i i <ESC>r
 nnoremap <leader>a a <ESC>r
 " }}}
