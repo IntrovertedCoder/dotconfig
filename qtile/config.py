@@ -40,7 +40,7 @@ terminal = "alacritty"
 web = "firefox"
 file = "ranger"
 music = "ncmpcpp"
-monitor = "btop"
+monitor = "bpytop"
 alacrittyOpacity = "-o window.opacity=0.5"
 
 keys = [
@@ -122,7 +122,7 @@ keys = [
 
     # Floating
     Key([mod], "F1", lazy.spawn("alacritty -o window.opacity=0.5 --class ranger,floating -e ranger"), desc="Open ranger floating"),
-    Key([mod], "F2", lazy.spawn("alacritty -o window.opacity=0.75 --class btop,floating -e btop"), desc="Open btop floating"),
+    Key([mod], "F2", lazy.spawn("alacritty -o window.opacity=0.75 --class bpytop,floating -e bpytop"), desc="Open bpytopfloating"),
     Key([mod], "F3", lazy.spawn("alacritty -o window.opacity=0.5 --class ncmpcpp,floating -e ncmpcpp"), desc="Open ncmpcpp floating"),
     Key([mod, "shift"], "Return", lazy.spawn("alacritty -o window.opacity=0.5 --class alacritty,floating"), desc="Launch terminal floating"),
 
@@ -229,7 +229,7 @@ screens = [
                        seperator,
                        widget.NvidiaSensors(format='{perf} {temp}°C'),
                        seperator,
-                       widget.Net(interface="enp5s0", use_bits=True, prefix="M"),
+                       widget.Net(interface="enp14s0", use_bits=True, prefix="M"),
                        seperator,
                        widget.Clock(format="%a %H:%M")
                        ], 24),
