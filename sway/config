@@ -105,9 +105,9 @@ input "22918:8469:Integrated_Camera:_Integrated_C" {
     bindsym $mod+F5 exec ssh-agent alacritty
 
     # Htop term
-    bindsym $mod+F2 exec alacritty -t btop -e btop
-    for_window [title="btop"] floating enable
-    for_window [title="btop"] resize set 724 457
+    bindsym $mod+F2 exec alacritty -t bpytop -e bpytop
+    for_window [title="bpytop"] floating enable
+    for_window [title="bpytop"] resize set 724 457
 
     # Music controller (floating)
     bindsym $mod+F3 exec alacritty -t ncmpc -e ncmpc
