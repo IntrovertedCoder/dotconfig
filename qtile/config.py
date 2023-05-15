@@ -71,6 +71,7 @@ keys = [
     Key([mod, "shift"], "space", lazy.layout.flip(),                      desc="Flip the master location"),
 
     Key([mod], "Return", lazy.spawn(terminal),                            desc="Launch terminal"),
+    Key([mod, "shift", "control"], "d", lazy.spawn("ulauncher --no-window"), desc="Launch ulauncher when quit"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(),                                 desc="Next layout"),
     Key([mod, "shift"], "Tab", lazy.prev_layout(),                        desc="Previous layout"),
